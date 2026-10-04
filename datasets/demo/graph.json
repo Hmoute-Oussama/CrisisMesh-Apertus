@@ -341,10 +341,10 @@
       }
     },
     {
-      "id": "event:EVT-C91725B763",
+      "id": "event:EVT-77F04FB354",
       "data": {
         "kind": "event",
-        "id": "EVT-C91725B763",
+        "id": "EVT-77F04FB354",
         "label": "road blocked",
         "event_type": "road_blocked",
         "verification_state": "corroborated",
@@ -364,33 +364,10 @@
       }
     },
     {
-      "id": "event:EVT-4DCBF54A98",
+      "id": "event:EVT-139E78955B",
       "data": {
         "kind": "event",
-        "id": "EVT-4DCBF54A98",
-        "label": "road blocked",
-        "event_type": "road_blocked",
-        "verification_state": "corroborated",
-        "severity": "unknown",
-        "location": "non specified",
-        "people_affected": null,
-        "sources": 3,
-        "color": "#22c55e"
-      }
-    },
-    {
-      "id": "place:non specified",
-      "data": {
-        "kind": "place",
-        "id": "non specified",
-        "label": "non specified"
-      }
-    },
-    {
-      "id": "event:EVT-63438E7FF3",
-      "data": {
-        "kind": "event",
-        "id": "EVT-63438E7FF3",
+        "id": "EVT-139E78955B",
         "label": "road blocked",
         "event_type": "road_blocked",
         "verification_state": "disputed",
@@ -410,10 +387,10 @@
       }
     },
     {
-      "id": "event:EVT-897B28B6DF",
+      "id": "event:EVT-51E17437A8",
       "data": {
         "kind": "event",
-        "id": "EVT-897B28B6DF",
+        "id": "EVT-51E17437A8",
         "label": "road blocked",
         "event_type": "road_blocked",
         "verification_state": "disputed",
@@ -425,10 +402,10 @@
       }
     },
     {
-      "id": "event:EVT-F889855C63",
+      "id": "event:EVT-1E31625D29",
       "data": {
         "kind": "event",
-        "id": "EVT-F889855C63",
+        "id": "EVT-1E31625D29",
         "label": "road blocked",
         "event_type": "road_blocked",
         "verification_state": "disputed",
@@ -448,10 +425,10 @@
       }
     },
     {
-      "id": "event:EVT-5DF21589D7",
+      "id": "event:EVT-84CD89C4DD",
       "data": {
         "kind": "event",
-        "id": "EVT-5DF21589D7",
+        "id": "EVT-84CD89C4DD",
         "label": "road blocked",
         "event_type": "road_blocked",
         "verification_state": "corroborated",
@@ -463,25 +440,10 @@
       }
     },
     {
-      "id": "event:EVT-6A7FD6F0EB",
+      "id": "event:EVT-E43A4F3248",
       "data": {
         "kind": "event",
-        "id": "EVT-6A7FD6F0EB",
-        "label": "road blocked",
-        "event_type": "road_blocked",
-        "verification_state": "corroborated",
-        "severity": "unknown",
-        "location": "non specified",
-        "people_affected": null,
-        "sources": 3,
-        "color": "#22c55e"
-      }
-    },
-    {
-      "id": "event:EVT-98D794B523",
-      "data": {
-        "kind": "event",
-        "id": "EVT-98D794B523",
+        "id": "EVT-E43A4F3248",
         "label": "road blocked",
         "event_type": "road_blocked",
         "verification_state": "corroborated",
@@ -493,25 +455,10 @@
       }
     },
     {
-      "id": "event:EVT-9F18731A4E",
+      "id": "event:EVT-1B8B80A427",
       "data": {
         "kind": "event",
-        "id": "EVT-9F18731A4E",
-        "label": "road blocked",
-        "event_type": "road_blocked",
-        "verification_state": "corroborated",
-        "severity": "unknown",
-        "location": "non specified",
-        "people_affected": null,
-        "sources": 3,
-        "color": "#22c55e"
-      }
-    },
-    {
-      "id": "event:EVT-58D9E0DD53",
-      "data": {
-        "kind": "event",
-        "id": "EVT-58D9E0DD53",
+        "id": "EVT-1B8B80A427",
         "label": "road blocked",
         "event_type": "road_blocked",
         "verification_state": "corroborated",
@@ -523,25 +470,10 @@
       }
     },
     {
-      "id": "event:EVT-B5340077A5",
+      "id": "event:EVT-CEC35EE7CA",
       "data": {
         "kind": "event",
-        "id": "EVT-B5340077A5",
-        "label": "road blocked",
-        "event_type": "road_blocked",
-        "verification_state": "corroborated",
-        "severity": "unknown",
-        "location": "non specified",
-        "people_affected": null,
-        "sources": 3,
-        "color": "#22c55e"
-      }
-    },
-    {
-      "id": "event:EVT-27FA85904F",
-      "data": {
-        "kind": "event",
-        "id": "EVT-27FA85904F",
+        "id": "EVT-CEC35EE7CA",
         "label": "road blocked",
         "event_type": "road_blocked",
         "verification_state": "corroborated",
@@ -553,10 +485,10 @@
       }
     },
     {
-      "id": "event:EVT-5D486AA5BB",
+      "id": "event:EVT-A3F77995F1",
       "data": {
         "kind": "event",
-        "id": "EVT-5D486AA5BB",
+        "id": "EVT-A3F77995F1",
         "label": "road open",
         "event_type": "road_open",
         "verification_state": "disputed",
@@ -568,14 +500,14 @@
       }
     },
     {
-      "id": "event:EVT-9BF4D723E2",
+      "id": "event:EVT-97DC7B2928",
       "data": {
         "kind": "event",
-        "id": "EVT-9BF4D723E2",
+        "id": "EVT-97DC7B2928",
         "label": "injury",
         "event_type": "injury",
         "verification_state": "unverified",
-        "severity": "high",
+        "severity": "unknown",
         "location": null,
         "people_affected": null,
         "sources": 1,
@@ -583,10 +515,10 @@
       }
     },
     {
-      "id": "event:EVT-E120CF51E4",
+      "id": "event:EVT-FADA0A3CC8",
       "data": {
         "kind": "event",
-        "id": "EVT-E120CF51E4",
+        "id": "EVT-FADA0A3CC8",
         "label": "injury",
         "event_type": "injury",
         "verification_state": "unverified",
@@ -606,10 +538,10 @@
       }
     },
     {
-      "id": "event:EVT-13B11C4796",
+      "id": "event:EVT-A31425680C",
       "data": {
         "kind": "event",
-        "id": "EVT-13B11C4796",
+        "id": "EVT-A31425680C",
         "label": "trapped person",
         "event_type": "trapped_person",
         "verification_state": "unverified",
@@ -629,10 +561,10 @@
       }
     },
     {
-      "id": "event:EVT-13416F0A01",
+      "id": "event:EVT-03CE0A2BEA",
       "data": {
         "kind": "event",
-        "id": "EVT-13416F0A01",
+        "id": "EVT-03CE0A2BEA",
         "label": "structural damage",
         "event_type": "structural_damage",
         "verification_state": "unverified",
@@ -652,10 +584,10 @@
       }
     },
     {
-      "id": "event:EVT-7D5D28DF6A",
+      "id": "event:EVT-1BD4D05277",
       "data": {
         "kind": "event",
-        "id": "EVT-7D5D28DF6A",
+        "id": "EVT-1BD4D05277",
         "label": "structural damage",
         "event_type": "structural_damage",
         "verification_state": "unverified",
@@ -675,10 +607,10 @@
       }
     },
     {
-      "id": "event:EVT-04DB9E67F1",
+      "id": "event:EVT-B103AC8609",
       "data": {
         "kind": "event",
-        "id": "EVT-04DB9E67F1",
+        "id": "EVT-B103AC8609",
         "label": "structural damage",
         "event_type": "structural_damage",
         "verification_state": "unverified",
@@ -698,10 +630,10 @@
       }
     },
     {
-      "id": "event:EVT-C302803DE2",
+      "id": "event:EVT-DBB767E2A8",
       "data": {
         "kind": "event",
-        "id": "EVT-C302803DE2",
+        "id": "EVT-DBB767E2A8",
         "label": "power outage",
         "event_type": "power_outage",
         "verification_state": "unverified",
@@ -721,10 +653,10 @@
       }
     },
     {
-      "id": "event:EVT-72230A49F0",
+      "id": "event:EVT-0106349F32",
       "data": {
         "kind": "event",
-        "id": "EVT-72230A49F0",
+        "id": "EVT-0106349F32",
         "label": "water outage",
         "event_type": "water_outage",
         "verification_state": "unverified",
@@ -744,10 +676,10 @@
       }
     },
     {
-      "id": "event:EVT-75EACB2426",
+      "id": "event:EVT-EF0477F138",
       "data": {
         "kind": "event",
-        "id": "EVT-75EACB2426",
+        "id": "EVT-EF0477F138",
         "label": "food need",
         "event_type": "food_need",
         "verification_state": "unverified",
@@ -759,10 +691,10 @@
       }
     },
     {
-      "id": "event:EVT-2F4AC6236D",
+      "id": "event:EVT-FFCCF752B1",
       "data": {
         "kind": "event",
-        "id": "EVT-2F4AC6236D",
+        "id": "EVT-FFCCF752B1",
         "label": "shelter capacity",
         "event_type": "shelter_capacity",
         "verification_state": "unverified",
@@ -782,10 +714,10 @@
       }
     },
     {
-      "id": "event:EVT-CF9836F206",
+      "id": "event:EVT-F66D2D481C",
       "data": {
         "kind": "event",
-        "id": "EVT-CF9836F206",
+        "id": "EVT-F66D2D481C",
         "label": "shelter capacity",
         "event_type": "shelter_capacity",
         "verification_state": "unverified",
@@ -805,10 +737,10 @@
       }
     },
     {
-      "id": "event:EVT-5FF586838B",
+      "id": "event:EVT-03442B7436",
       "data": {
         "kind": "event",
-        "id": "EVT-5FF586838B",
+        "id": "EVT-03442B7436",
         "label": "injury",
         "event_type": "injury",
         "verification_state": "unverified",
@@ -836,10 +768,10 @@
       }
     },
     {
-      "id": "event:EVT-60F2114620",
+      "id": "event:EVT-4461E87E83",
       "data": {
         "kind": "event",
-        "id": "EVT-60F2114620",
+        "id": "EVT-4461E87E83",
         "label": "water outage",
         "event_type": "water_outage",
         "verification_state": "corroborated",
@@ -859,10 +791,10 @@
       }
     },
     {
-      "id": "event:EVT-A82ACDD757",
+      "id": "event:EVT-57F78E508E",
       "data": {
         "kind": "event",
-        "id": "EVT-A82ACDD757",
+        "id": "EVT-57F78E508E",
         "label": "evacuation",
         "event_type": "evacuation",
         "verification_state": "unverified",
@@ -882,10 +814,10 @@
       }
     },
     {
-      "id": "event:EVT-EC3112566E",
+      "id": "event:EVT-F0C670F150",
       "data": {
         "kind": "event",
-        "id": "EVT-EC3112566E",
+        "id": "EVT-F0C670F150",
         "label": "hazard",
         "event_type": "hazard",
         "verification_state": "unverified",
@@ -905,10 +837,10 @@
       }
     },
     {
-      "id": "event:EVT-2E2F90A677",
+      "id": "event:EVT-D8AA8FE5E3",
       "data": {
         "kind": "event",
-        "id": "EVT-2E2F90A677",
+        "id": "EVT-D8AA8FE5E3",
         "label": "road blocked",
         "event_type": "road_blocked",
         "verification_state": "unverified",
@@ -928,10 +860,10 @@
       }
     },
     {
-      "id": "event:EVT-C45B67E434",
+      "id": "event:EVT-555893F45B",
       "data": {
         "kind": "event",
-        "id": "EVT-C45B67E434",
+        "id": "EVT-555893F45B",
         "label": "injury",
         "event_type": "injury",
         "verification_state": "unverified",
@@ -951,10 +883,10 @@
       }
     },
     {
-      "id": "event:EVT-9DB526D84A",
+      "id": "event:EVT-2F0FA3BC7C",
       "data": {
         "kind": "event",
-        "id": "EVT-9DB526D84A",
+        "id": "EVT-2F0FA3BC7C",
         "label": "injury",
         "event_type": "injury",
         "verification_state": "unverified",
@@ -974,10 +906,10 @@
       }
     },
     {
-      "id": "event:EVT-B0AE7AAF8F",
+      "id": "event:EVT-DD9B8342F1",
       "data": {
         "kind": "event",
-        "id": "EVT-B0AE7AAF8F",
+        "id": "EVT-DD9B8342F1",
         "label": "injury",
         "event_type": "injury",
         "verification_state": "unverified",
@@ -997,10 +929,10 @@
       }
     },
     {
-      "id": "event:EVT-79A19A451D",
+      "id": "event:EVT-C710E4E427",
       "data": {
         "kind": "event",
-        "id": "EVT-79A19A451D",
+        "id": "EVT-C710E4E427",
         "label": "other",
         "event_type": "other",
         "verification_state": "unverified",
@@ -1020,10 +952,10 @@
       }
     },
     {
-      "id": "event:EVT-F9745DF773",
+      "id": "event:EVT-54652EDD99",
       "data": {
         "kind": "event",
-        "id": "EVT-F9745DF773",
+        "id": "EVT-54652EDD99",
         "label": "other",
         "event_type": "other",
         "verification_state": "unverified",
@@ -1043,17 +975,17 @@
       }
     },
     {
-      "id": "event:EVT-3C39C0FEC5",
+      "id": "event:EVT-CECE7C5112",
       "data": {
         "kind": "event",
-        "id": "EVT-3C39C0FEC5",
+        "id": "EVT-CECE7C5112",
         "label": "road open",
         "event_type": "road_open",
         "verification_state": "unverified",
         "severity": "unknown",
         "location": "bridge",
         "people_affected": null,
-        "sources": 1,
+        "sources": 0,
         "color": "#eab308"
       }
     },
@@ -1066,40 +998,25 @@
       }
     },
     {
-      "id": "event:EVT-84026D14CB",
+      "id": "event:EVT-351C455F38",
       "data": {
         "kind": "event",
-        "id": "EVT-84026D14CB",
+        "id": "EVT-351C455F38",
         "label": "fire",
         "event_type": "fire",
         "verification_state": "unverified",
         "severity": "unknown",
         "location": null,
         "people_affected": null,
-        "sources": 1,
+        "sources": 0,
         "color": "#eab308"
       }
     },
     {
-      "id": "event:EVT-88EA72AAC1",
+      "id": "event:EVT-C5B73B36CD",
       "data": {
         "kind": "event",
-        "id": "EVT-88EA72AAC1",
-        "label": "road open",
-        "event_type": "road_open",
-        "verification_state": "unverified",
-        "severity": "unknown",
-        "location": null,
-        "people_affected": null,
-        "sources": 1,
-        "color": "#eab308"
-      }
-    },
-    {
-      "id": "event:EVT-23BF2AE60D",
-      "data": {
-        "kind": "event",
-        "id": "EVT-23BF2AE60D",
+        "id": "EVT-C5B73B36CD",
         "label": "road blocked",
         "event_type": "road_blocked",
         "verification_state": "corroborated",
@@ -1111,10 +1028,10 @@
       }
     },
     {
-      "id": "event:EVT-B750AFB396",
+      "id": "event:EVT-2CFD36010B",
       "data": {
         "kind": "event",
-        "id": "EVT-B750AFB396",
+        "id": "EVT-2CFD36010B",
         "label": "water outage",
         "event_type": "water_outage",
         "verification_state": "corroborated",
@@ -1134,10 +1051,10 @@
       }
     },
     {
-      "id": "event:EVT-103A803962",
+      "id": "event:EVT-52854FC7AB",
       "data": {
         "kind": "event",
-        "id": "EVT-103A803962",
+        "id": "EVT-52854FC7AB",
         "label": "resource available",
         "event_type": "resource_available",
         "verification_state": "corroborated",
@@ -1149,10 +1066,10 @@
       }
     },
     {
-      "id": "event:EVT-077CC924A8",
+      "id": "event:EVT-BCBFFCFA60",
       "data": {
         "kind": "event",
-        "id": "EVT-077CC924A8",
+        "id": "EVT-BCBFFCFA60",
         "label": "other",
         "event_type": "other",
         "verification_state": "unverified",
@@ -1164,10 +1081,10 @@
       }
     },
     {
-      "id": "event:EVT-A884C7A1CC",
+      "id": "event:EVT-CD4783A4B3",
       "data": {
         "kind": "event",
-        "id": "EVT-A884C7A1CC",
+        "id": "EVT-CD4783A4B3",
         "label": "injury",
         "event_type": "injury",
         "verification_state": "unverified",
@@ -1187,10 +1104,10 @@
       }
     },
     {
-      "id": "event:EVT-64A72CDF2A",
+      "id": "event:EVT-BB99E7F3D9",
       "data": {
         "kind": "event",
-        "id": "EVT-64A72CDF2A",
+        "id": "EVT-BB99E7F3D9",
         "label": "resource available",
         "event_type": "resource_available",
         "verification_state": "corroborated",
@@ -1212,500 +1129,440 @@
   ],
   "edges": [
     {
-      "source": "event:EVT-C91725B763",
+      "source": "event:EVT-77F04FB354",
       "target": "report:SC-001",
       "rel": "reported_by"
     },
     {
-      "source": "event:EVT-C91725B763",
+      "source": "event:EVT-77F04FB354",
       "target": "place:pont central",
       "rel": "occurred_at"
     },
     {
-      "source": "event:EVT-C91725B763",
-      "target": "event:EVT-5DF21589D7",
+      "source": "event:EVT-77F04FB354",
+      "target": "event:EVT-84CD89C4DD",
       "rel": "corroborates"
     },
     {
-      "source": "event:EVT-4DCBF54A98",
-      "target": "report:SC-001",
-      "rel": "reported_by"
-    },
-    {
-      "source": "event:EVT-4DCBF54A98",
-      "target": "place:non specified",
-      "rel": "occurred_at"
-    },
-    {
-      "source": "event:EVT-4DCBF54A98",
-      "target": "event:EVT-6A7FD6F0EB",
-      "rel": "corroborates"
-    },
-    {
-      "source": "event:EVT-63438E7FF3",
+      "source": "event:EVT-139E78955B",
       "target": "report:SC-002",
       "rel": "reported_by"
     },
     {
-      "source": "event:EVT-63438E7FF3",
+      "source": "event:EVT-139E78955B",
       "target": "place:الجسر المركزي",
       "rel": "occurred_at"
     },
     {
-      "source": "event:EVT-63438E7FF3",
-      "target": "event:EVT-5D486AA5BB",
+      "source": "event:EVT-139E78955B",
+      "target": "event:EVT-A3F77995F1",
       "rel": "contradicts",
-      "conflict_id": "CFL-F91E61885A",
+      "conflict_id": "CFL-882357C66C",
       "conflict_type": "status",
       "resolved": false
     },
     {
-      "source": "event:EVT-63438E7FF3",
-      "target": "event:EVT-897B28B6DF",
+      "source": "event:EVT-139E78955B",
+      "target": "event:EVT-51E17437A8",
       "rel": "corroborates"
     },
     {
-      "source": "event:EVT-897B28B6DF",
+      "source": "event:EVT-51E17437A8",
       "target": "report:SC-003",
       "rel": "reported_by"
     },
     {
-      "source": "event:EVT-897B28B6DF",
+      "source": "event:EVT-51E17437A8",
       "target": "place:الجسر المركزي",
       "rel": "occurred_at"
     },
     {
-      "source": "event:EVT-897B28B6DF",
-      "target": "event:EVT-5D486AA5BB",
+      "source": "event:EVT-51E17437A8",
+      "target": "event:EVT-A3F77995F1",
       "rel": "contradicts",
-      "conflict_id": "CFL-E3B7CE9DAB",
+      "conflict_id": "CFL-EC2BF50EA2",
       "conflict_type": "status",
       "resolved": false
     },
     {
-      "source": "event:EVT-F889855C63",
+      "source": "event:EVT-1E31625D29",
       "target": "report:SC-004",
       "rel": "reported_by"
     },
     {
-      "source": "event:EVT-F889855C63",
+      "source": "event:EVT-1E31625D29",
       "target": "place:central bridge",
       "rel": "occurred_at"
     },
     {
-      "source": "event:EVT-F889855C63",
-      "target": "event:EVT-5D486AA5BB",
+      "source": "event:EVT-1E31625D29",
+      "target": "event:EVT-A3F77995F1",
       "rel": "contradicts",
-      "conflict_id": "CFL-54ACCEA8AF",
+      "conflict_id": "CFL-CCAF3ACC4B",
       "conflict_type": "status",
       "resolved": false
     },
     {
-      "source": "event:EVT-5DF21589D7",
+      "source": "event:EVT-84CD89C4DD",
       "target": "report:SC-005",
       "rel": "reported_by"
     },
     {
-      "source": "event:EVT-5DF21589D7",
+      "source": "event:EVT-84CD89C4DD",
       "target": "place:pont central",
       "rel": "occurred_at"
     },
     {
-      "source": "event:EVT-5DF21589D7",
-      "target": "event:EVT-98D794B523",
+      "source": "event:EVT-84CD89C4DD",
+      "target": "event:EVT-E43A4F3248",
       "rel": "corroborates"
     },
     {
-      "source": "event:EVT-6A7FD6F0EB",
-      "target": "report:SC-005",
-      "rel": "reported_by"
-    },
-    {
-      "source": "event:EVT-6A7FD6F0EB",
-      "target": "place:non specified",
-      "rel": "occurred_at"
-    },
-    {
-      "source": "event:EVT-6A7FD6F0EB",
-      "target": "event:EVT-9F18731A4E",
-      "rel": "corroborates"
-    },
-    {
-      "source": "event:EVT-98D794B523",
+      "source": "event:EVT-E43A4F3248",
       "target": "report:SC-006",
       "rel": "reported_by"
     },
     {
-      "source": "event:EVT-98D794B523",
+      "source": "event:EVT-E43A4F3248",
       "target": "place:pont central",
       "rel": "occurred_at"
     },
     {
-      "source": "event:EVT-98D794B523",
-      "target": "event:EVT-58D9E0DD53",
+      "source": "event:EVT-E43A4F3248",
+      "target": "event:EVT-1B8B80A427",
       "rel": "corroborates"
     },
     {
-      "source": "event:EVT-9F18731A4E",
-      "target": "report:SC-006",
-      "rel": "reported_by"
-    },
-    {
-      "source": "event:EVT-9F18731A4E",
-      "target": "place:non specified",
-      "rel": "occurred_at"
-    },
-    {
-      "source": "event:EVT-9F18731A4E",
-      "target": "event:EVT-B5340077A5",
-      "rel": "corroborates"
-    },
-    {
-      "source": "event:EVT-58D9E0DD53",
+      "source": "event:EVT-1B8B80A427",
       "target": "report:SC-007",
       "rel": "reported_by"
     },
     {
-      "source": "event:EVT-58D9E0DD53",
+      "source": "event:EVT-1B8B80A427",
       "target": "place:pont central",
       "rel": "occurred_at"
     },
     {
-      "source": "event:EVT-58D9E0DD53",
-      "target": "event:EVT-27FA85904F",
+      "source": "event:EVT-1B8B80A427",
+      "target": "event:EVT-CEC35EE7CA",
       "rel": "corroborates"
     },
     {
-      "source": "event:EVT-B5340077A5",
-      "target": "report:SC-007",
-      "rel": "reported_by"
-    },
-    {
-      "source": "event:EVT-B5340077A5",
-      "target": "place:non specified",
-      "rel": "occurred_at"
-    },
-    {
-      "source": "event:EVT-27FA85904F",
+      "source": "event:EVT-CEC35EE7CA",
       "target": "report:SC-008",
       "rel": "reported_by"
     },
     {
-      "source": "event:EVT-27FA85904F",
+      "source": "event:EVT-CEC35EE7CA",
       "target": "place:pont central",
       "rel": "occurred_at"
     },
     {
-      "source": "event:EVT-27FA85904F",
-      "target": "event:EVT-23BF2AE60D",
+      "source": "event:EVT-CEC35EE7CA",
+      "target": "event:EVT-C5B73B36CD",
       "rel": "corroborates"
     },
     {
-      "source": "event:EVT-5D486AA5BB",
+      "source": "event:EVT-A3F77995F1",
       "target": "report:SC-009",
       "rel": "reported_by"
     },
     {
-      "source": "event:EVT-5D486AA5BB",
+      "source": "event:EVT-A3F77995F1",
       "target": "place:الجسر المركزي",
       "rel": "occurred_at"
     },
     {
-      "source": "event:EVT-9BF4D723E2",
+      "source": "event:EVT-97DC7B2928",
       "target": "report:SC-010",
       "rel": "reported_by"
     },
     {
-      "source": "event:EVT-E120CF51E4",
+      "source": "event:EVT-FADA0A3CC8",
       "target": "report:SC-011",
       "rel": "reported_by"
     },
     {
-      "source": "event:EVT-E120CF51E4",
+      "source": "event:EVT-FADA0A3CC8",
       "target": "place:près du stade",
       "rel": "occurred_at"
     },
     {
-      "source": "event:EVT-13B11C4796",
+      "source": "event:EVT-A31425680C",
       "target": "report:SC-012",
       "rel": "reported_by"
     },
     {
-      "source": "event:EVT-13B11C4796",
+      "source": "event:EVT-A31425680C",
       "target": "place:medina القديمة",
       "rel": "occurred_at"
     },
     {
-      "source": "event:EVT-13416F0A01",
+      "source": "event:EVT-03CE0A2BEA",
       "target": "report:SC-013",
       "rel": "reported_by"
     },
     {
-      "source": "event:EVT-13416F0A01",
+      "source": "event:EVT-03CE0A2BEA",
       "target": "place:vieille medina",
       "rel": "occurred_at"
     },
     {
-      "source": "event:EVT-7D5D28DF6A",
+      "source": "event:EVT-1BD4D05277",
       "target": "report:SC-014",
       "rel": "reported_by"
     },
     {
-      "source": "event:EVT-7D5D28DF6A",
+      "source": "event:EVT-1BD4D05277",
       "target": "place:old medina residential block",
       "rel": "occurred_at"
     },
     {
-      "source": "event:EVT-04DB9E67F1",
+      "source": "event:EVT-B103AC8609",
       "target": "report:SC-015",
       "rel": "reported_by"
     },
     {
-      "source": "event:EVT-04DB9E67F1",
+      "source": "event:EVT-B103AC8609",
       "target": "place:الجامعة",
       "rel": "occurred_at"
     },
     {
-      "source": "event:EVT-C302803DE2",
+      "source": "event:EVT-DBB767E2A8",
       "target": "report:SC-016",
       "rel": "reported_by"
     },
     {
-      "source": "event:EVT-C302803DE2",
+      "source": "event:EVT-DBB767E2A8",
       "target": "place:المدينة",
       "rel": "occurred_at"
     },
     {
-      "source": "event:EVT-72230A49F0",
+      "source": "event:EVT-0106349F32",
       "target": "report:SC-017",
       "rel": "reported_by"
     },
     {
-      "source": "event:EVT-72230A49F0",
+      "source": "event:EVT-0106349F32",
       "target": "place:الحارة",
       "rel": "occurred_at"
     },
     {
-      "source": "event:EVT-75EACB2426",
+      "source": "event:EVT-EF0477F138",
       "target": "report:SC-017",
       "rel": "reported_by"
     },
     {
-      "source": "event:EVT-2F4AC6236D",
+      "source": "event:EVT-FFCCF752B1",
       "target": "report:SC-018",
       "rel": "reported_by"
     },
     {
-      "source": "event:EVT-2F4AC6236D",
+      "source": "event:EVT-FFCCF752B1",
       "target": "place:hopital al-amal",
       "rel": "occurred_at"
     },
     {
-      "source": "event:EVT-CF9836F206",
+      "source": "event:EVT-F66D2D481C",
       "target": "report:SC-019",
       "rel": "reported_by"
     },
     {
-      "source": "event:EVT-CF9836F206",
+      "source": "event:EVT-F66D2D481C",
       "target": "place:المستشفى",
       "rel": "occurred_at"
     },
     {
-      "source": "event:EVT-5FF586838B",
+      "source": "event:EVT-03442B7436",
       "target": "report:SC-019",
       "rel": "reported_by"
     },
     {
-      "source": "event:EVT-5FF586838B",
+      "source": "event:EVT-03442B7436",
       "target": "place:sopra",
       "rel": "occurred_at"
     },
     {
-      "source": "event:EVT-5FF586838B",
+      "source": "event:EVT-03442B7436",
       "target": "people:50",
       "rel": "affects"
     },
     {
-      "source": "event:EVT-60F2114620",
+      "source": "event:EVT-4461E87E83",
       "target": "report:SC-020",
       "rel": "reported_by"
     },
     {
-      "source": "event:EVT-60F2114620",
+      "source": "event:EVT-4461E87E83",
       "target": "place:الملعب الرياضي",
       "rel": "occurred_at"
     },
     {
-      "source": "event:EVT-A82ACDD757",
+      "source": "event:EVT-57F78E508E",
       "target": "report:SC-021",
       "rel": "reported_by"
     },
     {
-      "source": "event:EVT-A82ACDD757",
+      "source": "event:EVT-57F78E508E",
       "target": "place:industrial zone",
       "rel": "occurred_at"
     },
     {
-      "source": "event:EVT-EC3112566E",
+      "source": "event:EVT-F0C670F150",
       "target": "report:SC-022",
       "rel": "reported_by"
     },
     {
-      "source": "event:EVT-EC3112566E",
+      "source": "event:EVT-F0C670F150",
       "target": "place:zone industrielle",
       "rel": "occurred_at"
     },
     {
-      "source": "event:EVT-2E2F90A677",
+      "source": "event:EVT-D8AA8FE5E3",
       "target": "report:SC-023",
       "rel": "reported_by"
     },
     {
-      "source": "event:EVT-2E2F90A677",
+      "source": "event:EVT-D8AA8FE5E3",
       "target": "place:الدوار الشمالي",
       "rel": "occurred_at"
     },
     {
-      "source": "event:EVT-C45B67E434",
+      "source": "event:EVT-555893F45B",
       "target": "report:SC-024",
       "rel": "reported_by"
     },
     {
-      "source": "event:EVT-C45B67E434",
+      "source": "event:EVT-555893F45B",
       "target": "place:السرو ديالو",
       "rel": "occurred_at"
     },
     {
-      "source": "event:EVT-9DB526D84A",
+      "source": "event:EVT-2F0FA3BC7C",
       "target": "report:SC-025",
       "rel": "reported_by"
     },
     {
-      "source": "event:EVT-9DB526D84A",
+      "source": "event:EVT-2F0FA3BC7C",
       "target": "place:hopital al-amal",
       "rel": "occurred_at"
     },
     {
-      "source": "event:EVT-9DB526D84A",
+      "source": "event:EVT-2F0FA3BC7C",
       "target": "people:4",
       "rel": "affects"
     },
     {
-      "source": "event:EVT-B0AE7AAF8F",
+      "source": "event:EVT-DD9B8342F1",
       "target": "report:SC-026",
       "rel": "reported_by"
     },
     {
-      "source": "event:EVT-B0AE7AAF8F",
+      "source": "event:EVT-DD9B8342F1",
       "target": "people:2",
       "rel": "affects"
     },
     {
-      "source": "event:EVT-79A19A451D",
+      "source": "event:EVT-C710E4E427",
       "target": "report:SC-027",
       "rel": "reported_by"
     },
     {
-      "source": "event:EVT-79A19A451D",
+      "source": "event:EVT-C710E4E427",
       "target": "place:pont",
       "rel": "occurred_at"
     },
     {
-      "source": "event:EVT-F9745DF773",
+      "source": "event:EVT-54652EDD99",
       "target": "report:SC-028",
       "rel": "reported_by"
     },
     {
-      "source": "event:EVT-F9745DF773",
+      "source": "event:EVT-54652EDD99",
       "target": "place:stadium",
       "rel": "occurred_at"
     },
     {
-      "source": "event:EVT-3C39C0FEC5",
+      "source": "event:EVT-CECE7C5112",
       "target": "report:SC-029",
       "rel": "reported_by"
     },
     {
-      "source": "event:EVT-3C39C0FEC5",
+      "source": "event:EVT-CECE7C5112",
       "target": "place:bridge",
       "rel": "occurred_at"
     },
     {
-      "source": "event:EVT-84026D14CB",
+      "source": "event:EVT-351C455F38",
       "target": "report:SC-029",
       "rel": "reported_by"
     },
     {
-      "source": "event:EVT-88EA72AAC1",
-      "target": "report:SC-029",
-      "rel": "reported_by"
-    },
-    {
-      "source": "event:EVT-23BF2AE60D",
+      "source": "event:EVT-C5B73B36CD",
       "target": "report:SC-030",
       "rel": "reported_by"
     },
     {
-      "source": "event:EVT-23BF2AE60D",
+      "source": "event:EVT-C5B73B36CD",
       "target": "place:pont central",
       "rel": "occurred_at"
     },
     {
-      "source": "event:EVT-B750AFB396",
+      "source": "event:EVT-2CFD36010B",
       "target": "report:SC-031",
       "rel": "reported_by"
     },
     {
-      "source": "event:EVT-B750AFB396",
+      "source": "event:EVT-2CFD36010B",
       "target": "place:stade omnisports",
       "rel": "occurred_at"
     },
     {
-      "source": "event:EVT-103A803962",
+      "source": "event:EVT-52854FC7AB",
       "target": "report:SC-031",
       "rel": "reported_by"
     },
     {
-      "source": "event:EVT-103A803962",
+      "source": "event:EVT-52854FC7AB",
       "target": "place:stade omnisports",
       "rel": "occurred_at"
     },
     {
-      "source": "event:EVT-077CC924A8",
+      "source": "event:EVT-BCBFFCFA60",
       "target": "report:SC-032",
       "rel": "reported_by"
     },
     {
-      "source": "event:EVT-077CC924A8",
+      "source": "event:EVT-BCBFFCFA60",
       "target": "place:الملعب الرياضي",
       "rel": "occurred_at"
     },
     {
-      "source": "event:EVT-A884C7A1CC",
+      "source": "event:EVT-CD4783A4B3",
       "target": "report:SC-033",
       "rel": "reported_by"
     },
     {
-      "source": "event:EVT-A884C7A1CC",
+      "source": "event:EVT-CD4783A4B3",
       "target": "place:kaln}diro stadium rah maftouh",
       "rel": "occurred_at"
     },
     {
-      "source": "event:EVT-64A72CDF2A",
+      "source": "event:EVT-BB99E7F3D9",
       "target": "report:SC-034",
       "rel": "reported_by"
     },
     {
-      "source": "event:EVT-64A72CDF2A",
+      "source": "event:EVT-BB99E7F3D9",
       "target": "place:sports stadium",
       "rel": "occurred_at"
     }
   ],
   "stats": {
-    "nodes": 105,
-    "edges": 96,
-    "events": 43,
-    "places": 25,
+    "nodes": 99,
+    "edges": 84,
+    "events": 38,
+    "places": 24,
     "contradictions": 3
   }
 }

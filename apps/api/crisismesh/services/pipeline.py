@@ -226,11 +226,89 @@ def process_report(session, report: Report,
            model_version=st.apertus_model_label,
            prompt_version=st.prompt_version_extraction,
            input_ref=report.report_id,
-           output_summary={"events": len(created), "segments": len(segments),
-                           "latency_ms": total_latency},
-           detail={"injection_signals": len(signals)})
+output_summary={"events": len(created), "segments": len(segments),
+                            "latency_ms": total_latency},
+            detail={"injection_signals": len(signals)})
+    collapsed = collapse_within_report(session, report.report_id)
+    if collapsed["collapsed"]:
+        created = [e for e in created if e.event_id not in set(collapsed["event_ids"])]
+
     return {"report_id": report.report_id, "events": len(created),
             "segments": len(segments), "latency_ms": total_latency}
+
+
+def collapse_within_report(session, report_id: str) -> dict:
+    """Drop events that repeat one already-extracted claim from the same report.
+
+    Extraction runs per sentence, so a report whose two sentences both describe
+    the same road closure yields two events. They are the same claim from the
+    same document, and keeping both is actively harmful: it inflates event
+    counts, shows the operator the same fact twice, and lets a single document
+    look like broader coverage than it is.
+
+    Merge condition is deliberately strict. All of these must hold:
+
+    - same report, same event type
+    - identical resolved or raw place, or one side states no place at all
+    - the incomplete side adds no people count and no time reference
+
+    The last condition is the safety valve. "10 injured at the bridge" and
+    "bridge" are not the same claim, so a count or a time on exactly one side
+    blocks the merge instead of silently discarding information.
+    """
+    st = get_settings()
+    events = (session.query(Event)
+              .filter(Event.report_id == report_id)
+              .order_by(Event.segment_index)
+              .all())
+    dropped: list[str] = []
+    for i, keep in enumerate(events):
+        if keep.event_id in dropped:
+            continue
+        for later in events[i + 1:]:
+            if later.event_id in dropped:
+                continue
+            if later.event_type != keep.event_type:
+                continue
+
+            place_keep = keep.resolved_location or keep.location_text
+            place_later = later.resolved_location or later.location_text
+            same_place = bool(place_keep) and bool(place_later) \
+                and place_keep == place_later
+            one_silent = bool(place_keep) != bool(place_later)
+            if not (same_place or one_silent):
+                continue
+
+            # Whichever side is less complete is the one removed.
+            richer, poorer = (keep, later) if (
+                bool(place_keep), keep.people_affected, keep.time_reference) >= (
+                bool(place_later), later.people_affected, later.time_reference) \
+                else (later, keep)
+
+            if bool(poorer.people_affected) and poorer.people_affected != \
+                    richer.people_affected:
+                continue
+            if poorer.time_reference and poorer.time_reference != \
+                    richer.time_reference:
+                continue
+
+            # Keep both evidence links so provenance survives the merge.
+            for link in session.query(EvidenceLink).filter(
+                    EvidenceLink.event_id == poorer.event_id).all():
+                link.event_id = richer.event_id
+
+            _audit(session, "event", poorer.event_id,
+                   "within_report_duplicate_collapsed",
+                   model_used=st.apertus_model_id,
+                   prompt_version=st.prompt_version_extraction,
+                   detail={"kept_event_id": richer.event_id,
+                           "dropped_event_type": poorer.event_type})
+            session.delete(poorer)
+            dropped.append(poorer.event_id)
+
+    if dropped:
+        session.flush()
+    return {"collapsed": len(dropped), "event_ids": dropped}
 
 
 def ev_value(event, field: str):

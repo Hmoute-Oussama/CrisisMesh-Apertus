@@ -141,9 +141,9 @@ SEVERITY_MARKERS: dict[str, frozenset[str]] = {
             "life threatening", "gravementre", "mortal", "grave danger",
         }
     ),
-    Severity.HIGH: frozenset(
+Severity.HIGH: frozenset(
         {"grave", "gravementre", "serieux", "serieuse", "sévère", "severe",
-         "majeur", "danger", "dangerous", "قاسح", "خطير"}
+         "majeur", "danger", "dangerous", "serious", "خطير", "قاسح"}
     ),
     Severity.MEDIUM: frozenset(
         {"modere", "modéré", "important", "urgent", "عاجل", "مهم"}
@@ -152,15 +152,49 @@ SEVERITY_MARKERS: dict[str, frozenset[str]] = {
 }
 
 
+# Uncertainty and negation cues. A severity marker that sits inside the scope of
+# one of these has been disclaimed by the speaker, not asserted by them.
+#
+# SC-010 says "one person is injured but I don't know if it is serious"
+# (Arabic/Darija). The word for "serious" is a HIGH marker, so a purely lexical
+# scan read the report as asserting high severity when the speaker was explicitly
+# saying they could not tell. That is the exact failure this project exists to
+# prevent, produced by our own guard rather than by the model.
+_NEGATION_CUES = frozenset({
+    "not", "no", "never", "dont", "doesnt", "isnt", "wasnt", "cannot", "unknown",
+    "unsure", "maybe", "perhaps", "possibly", "if", "whether", "unclear",
+    "mعرفتش", "معرفش", "واش", "ما", "ماعرف", "ماعرفش", "ما ادري", "مادري",
+    "لا", "لم", "لن", "ليس", "غير", "بدون", "也许", "不知道", "不确定", "如果",
+})
+
+# How many words back from the marker a negation still governs. Kept tight: a cue
+# three clauses earlier should not silence a marker asserted afterwards.
+_NEGATION_WINDOW = 6
+
+
 def severity_from_markers(text: str) -> Severity:
     """Derive severity only from explicit lexical markers in the source text.
 
     Returns Severity.UNKNOWN when nothing explicitly states seriousness. This is
     deliberately conservative: we would rather report unknown than guess.
+
+    A marker only counts when it is not inside the scope of an uncertainty cue.
+    "I don't know if it is serious" contains the word for serious and asserts
+    nothing; treating the bare keyword as evidence would manufacture certainty
+    out of an explicit disclaimer.
     """
-    low = (text or "").lower()
+    words = _words((text or "").lower())
+    if not words:
+        return Severity.UNKNOWN
+
     for sev in (Severity.CRITICAL, Severity.HIGH, Severity.MEDIUM, Severity.LOW):
-        if SEVERITY_MARKERS[sev] & set(_words(low)):
+        markers = SEVERITY_MARKERS[sev]
+        for i, word in enumerate(words):
+            if word not in markers:
+                continue
+            window = words[max(0, i - _NEGATION_WINDOW):i]
+            if any(w in _NEGATION_CUES for w in window):
+                continue        # marker is disclaimed, not asserted
             return sev
     return Severity.UNKNOWN
 

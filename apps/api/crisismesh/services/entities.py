@@ -208,6 +208,18 @@ class LocationResolver:
             self._cache[cache_key] = res
             return res
 
+        # Exact normalized identity against an existing candidate, decided
+        # before the model is consulted at all. "Pont  Central" and "pont
+        # central" are the same string once folded; asking a 4B model to agree
+        # with arithmetic only creates a chance to disagree with it. The model
+        # supplies spellings for the hard cases, never an identity verdict.
+        exact = next((c for c in live if normalize_place(c) == key_mention), None)
+        if exact is not None:
+            out = Resolution(canonical=exact, same=True, confidence=1.0,
+                             reason="exact_normalized_match")
+            self._cache[cache_key] = out
+            return out
+
         res = self.client.resolve_place(mention, live)
         if res is None:
             # Unreachable model is not a licence to guess. Keep the place
@@ -236,15 +248,14 @@ class LocationResolver:
         #   2. otherwise the mention must share a content word with the match,
         #      or the two must be known cross-language aliases of one another.
         #
-        # Rule 2 deliberately fails closed: an unmergeable pair stays separate.
+# Rule 2 deliberately fails closed: an unmergeable pair stays separate.
         # A missing contradiction is a gap the operator can see; a fabricated
         # one is a lie with a confidence number attached to it.
         if match is None:
+            # The model proposed a spelling that is not among the places we
+            # already know. That is a new place, not a merge.
             out = Resolution(canonical=res.canonical or mention, same=False,
                              confidence=0.0, reason="apertus_name_is_new")
-        elif normalize_place(mention) == normalize_place(match):
-            out = Resolution(canonical=match, same=True, confidence=1.0,
-                             reason="exact_normalized_match")
         elif _shares_content_word(mention, match) or _known_alias(mention, match):
             out = Resolution(canonical=match, same=True, confidence=0.7,
                              reason="apertus_name_with_lexical_support")

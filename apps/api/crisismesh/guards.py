@@ -47,10 +47,42 @@ INJECTION_PATTERNS: tuple[str, ...] = (
     r"\bset\s+severity\s+to\b",
 )
 
+# Placeholder values meaning "the model found no answer". Matched on the
+# accent-stripped, casefolded form so one entry covers every spelling.
+#
+# The multilingual variants matter as much as the English ones. An earlier
+# version listed "not specified" but not "non specifie", so the model emitting
+# the French "non specifie" for an unstated place was stored as if it were a
+# real location, producing a phantom duplicate event on four reports. The
+# placeholder list has to be closed over the languages the system claims to
+# handle, not just the language its author speaks.
+_PLACEHOLDER_WORDS = {
+    "", "-", "?", "n/a", "na", "nil", "none", "null", "undefined", "unknown",
+    "unk", "no", "no information", "no data", "no location", "no place",
+    "not specified", "non specified", "not available", "not stated",
+    "not mentioned", "non given", "non provided", "non disclosed",
+    "non existant", "non existe", "no location given", "location not specified",
+    "unspecified", "undefined location", "unavailable", "unspecified location",
+    "non specifie", "non precise", "non precisee", "non indique", "non mentionne",
+    "non renseigne", "pas d'information", "inconnu", "indetermine",
+    "non specifiee", "pas precise", "pas indique", "non defini",
+    "غير محدد", "غير معروف", "غير مذكور", "لا يوجد", "لا معلومة",
+}
+
 _NULLISH = {
     "", "null", "none", "n/a", "na", "unknown", "unspecified", "not specified",
     "undefined", "nil", "-", "?", "no", "UNK", "UNKNOWN", "Unknown",
 }
+
+
+def _fold_placeholder(value: str) -> str:
+    """Accent-stripped, casefolded, whitespace-collapsed form for comparison."""
+    text = unicodedata.normalize("NFKD", value)
+    text = "".join(c for c in text if not unicodedata.combining(c))
+    return " ".join(text.lower().split())
+
+
+_PLACEHOLDER_FOLDED = {_fold_placeholder(p) for p in _PLACEHOLDER_WORDS}
 
 # Values the model emits when it gets confused about its own task. These are
 # guardrail rejections, not abstentions, and they are recorded as such.
@@ -114,6 +146,10 @@ def _clean_str(value) -> str | None:
         return None
     v = unicodedata.normalize("NFC", value).strip()
     if v in _NULLISH or v.lower() in _NULLISH:
+        return None
+    # Folded placeholder check, so "Non Specifié", "NON SPECIFIE" and
+    # "non  specifie" are all recognised as abstentions.
+    if _fold_placeholder(v) in _PLACEHOLDER_FOLDED:
         return None
     return v or None
 
