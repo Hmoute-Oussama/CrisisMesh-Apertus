@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Node
+node_modules/
+.next/
+out/
+*.tsbuildinfo
+
+# Local data / models / databases
+*.db
+*.db-journal
+models/
+datasets/processed/
+data/
+*.gguf
+
+# Runtime logs and scratch output
+*.log
+logs/
+api.log
+api.err.log
+*.pid
+
+# Secrets
+.env
+.env.local
+*.pem
+*.key
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/

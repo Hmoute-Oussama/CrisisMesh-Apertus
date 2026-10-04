@@ -1,0 +1,754 @@
+{
+  "scenario": "Al-Nour earthquake M5.8",
+  "seed": 20260904,
+  "annotations": [
+    {
+      "report_id": "SC-001",
+      "source_language": "fr",
+      "expected_events": [
+        {
+          "event_type": "road_blocked",
+          "location_ref": "pont central",
+          "location_tokens": [
+            "central",
+            "pont"
+          ],
+          "people_affected": null,
+          "severity": "unknown"
+        }
+      ],
+      "is_duplicate_of": null,
+      "conflicts_with": [],
+      "should_abstain_fields": [
+        "people_affected",
+        "severity"
+      ],
+      "design_note": "deliberate typo: unclosed code-switch 'reopened'"
+    },
+    {
+      "report_id": "SC-002",
+      "source_language": "ar",
+      "expected_events": [
+        {
+          "event_type": "road_blocked",
+          "location_ref": "الجسر المركزي",
+          "location_tokens": [
+            "الجسر",
+            "المركزي"
+          ],
+          "people_affected": null,
+          "severity": "unknown"
+        }
+      ],
+      "is_duplicate_of": null,
+      "conflicts_with": [],
+      "should_abstain_fields": [
+        "people_affected",
+        "severity"
+      ],
+      "design_note": ""
+    },
+    {
+      "report_id": "SC-003",
+      "source_language": "dar",
+      "expected_events": [
+        {
+          "event_type": "road_blocked",
+          "location_ref": "الجسر المركزي",
+          "location_tokens": [
+            "الجسر",
+            "المركزي"
+          ],
+          "people_affected": null,
+          "severity": "unknown"
+        }
+      ],
+      "is_duplicate_of": null,
+      "conflicts_with": [],
+      "should_abstain_fields": [
+        "people_affected",
+        "severity"
+      ],
+      "design_note": ""
+    },
+    {
+      "report_id": "SC-004",
+      "source_language": "en",
+      "expected_events": [
+        {
+          "event_type": "road_blocked",
+          "location_ref": "central bridge",
+          "location_tokens": [
+            "bridge",
+            "central"
+          ],
+          "people_affected": null,
+          "severity": "unknown"
+        }
+      ],
+      "is_duplicate_of": null,
+      "conflicts_with": [],
+      "should_abstain_fields": [
+        "people_affected",
+        "severity"
+      ],
+      "design_note": ""
+    },
+    {
+      "report_id": "SC-005",
+      "source_language": "fr",
+      "expected_events": [
+        {
+          "event_type": "road_blocked",
+          "location_ref": "pont central",
+          "location_tokens": [
+            "central",
+            "pont"
+          ],
+          "people_affected": null,
+          "severity": "unknown"
+        }
+      ],
+      "is_duplicate_of": "SC-001",
+      "conflicts_with": [],
+      "should_abstain_fields": [
+        "people_affected",
+        "severity"
+      ],
+      "design_note": "forwarded copy, must not count as new source"
+    },
+    {
+      "report_id": "SC-006",
+      "source_language": "fr",
+      "expected_events": [
+        {
+          "event_type": "road_blocked",
+          "location_ref": "pont central",
+          "location_tokens": [
+            "central",
+            "pont"
+          ],
+          "people_affected": null,
+          "severity": "unknown"
+        }
+      ],
+      "is_duplicate_of": "SC-001",
+      "conflicts_with": [],
+      "should_abstain_fields": [
+        "people_affected",
+        "severity"
+      ],
+      "design_note": "second forward"
+    },
+    {
+      "report_id": "SC-007",
+      "source_language": "fr",
+      "expected_events": [
+        {
+          "event_type": "road_blocked",
+          "location_ref": "pont central",
+          "location_tokens": [
+            "central",
+            "pont"
+          ],
+          "people_affected": null,
+          "severity": "unknown"
+        }
+      ],
+      "is_duplicate_of": "SC-001",
+      "conflicts_with": [],
+      "should_abstain_fields": [
+        "people_affected",
+        "severity"
+      ],
+      "design_note": "third forward"
+    },
+    {
+      "report_id": "SC-008",
+      "source_language": "fr",
+      "expected_events": [
+        {
+          "event_type": "road_blocked",
+          "location_ref": "pont central",
+          "location_tokens": [
+            "central",
+            "pont"
+          ],
+          "people_affected": null,
+          "severity": "unknown"
+        }
+      ],
+      "is_duplicate_of": null,
+      "conflicts_with": [
+        "SC-009"
+      ],
+      "should_abstain_fields": [
+        "people_affected",
+        "severity"
+      ],
+      "design_note": ""
+    },
+    {
+      "report_id": "SC-009",
+      "source_language": "dar",
+      "expected_events": [
+        {
+          "event_type": "road_open",
+          "location_ref": "الجسر المركزي",
+          "location_tokens": [
+            "الجسر",
+            "المركزي"
+          ],
+          "people_affected": null,
+          "severity": "unknown"
+        }
+      ],
+      "is_duplicate_of": null,
+      "conflicts_with": [
+        "SC-008"
+      ],
+      "should_abstain_fields": [
+        "people_affected",
+        "severity"
+      ],
+      "design_note": "CONTRADICTS SC-008. Whether this is a real state change or a confused witness is exactly what CrisisMesh must not decide. Names the bridge explicitly so the contradiction is reachable across languages."
+    },
+    {
+      "report_id": "SC-010",
+      "source_language": "dar",
+      "expected_events": [
+        {
+          "event_type": "injury",
+          "location_ref": null,
+          "location_tokens": null,
+          "people_affected": 1,
+          "severity": "unknown"
+        }
+      ],
+      "is_duplicate_of": null,
+      "conflicts_with": [],
+      "should_abstain_fields": [
+        "severity",
+        "location_text"
+      ],
+      "design_note": "ambiguous severity: the report explicitly declines to say"
+    },
+    {
+      "report_id": "SC-011",
+      "source_language": "fr",
+      "expected_events": [
+        {
+          "event_type": "injury",
+          "location_ref": "stade",
+          "location_tokens": [
+            "stade"
+          ],
+          "people_affected": 2,
+          "severity": "high"
+        }
+      ],
+      "is_duplicate_of": null,
+      "conflicts_with": [],
+      "should_abstain_fields": [],
+      "design_note": "severity licensed by 'une perd connaissance'"
+    },
+    {
+      "report_id": "SC-012",
+      "source_language": "ar",
+      "expected_events": [
+        {
+          "event_type": "trapped_person",
+          "location_ref": "المدينة القديمة",
+          "location_tokens": [
+            "القديمة",
+            "المدينة"
+          ],
+          "people_affected": 5,
+          "severity": "unknown"
+        }
+      ],
+      "is_duplicate_of": null,
+      "conflicts_with": [],
+      "should_abstain_fields": [
+        "severity"
+      ],
+      "design_note": ""
+    },
+    {
+      "report_id": "SC-013",
+      "source_language": "fr",
+      "expected_events": [
+        {
+          "event_type": "structural_damage",
+          "location_ref": "vieille medina",
+          "location_tokens": [
+            "medina",
+            "vieille"
+          ],
+          "people_affected": null,
+          "severity": "unknown"
+        }
+      ],
+      "is_duplicate_of": null,
+      "conflicts_with": [],
+      "should_abstain_fields": [
+        "people_affected",
+        "severity"
+      ],
+      "design_note": ""
+    },
+    {
+      "report_id": "SC-014",
+      "source_language": "en",
+      "expected_events": [
+        {
+          "event_type": "structural_damage",
+          "location_ref": "old medina",
+          "location_tokens": [
+            "medina",
+            "old"
+          ],
+          "people_affected": null,
+          "severity": "unknown"
+        }
+      ],
+      "is_duplicate_of": null,
+      "conflicts_with": [],
+      "should_abstain_fields": [
+        "people_affected",
+        "severity"
+      ],
+      "design_note": "paraphrase of SC-013 in English"
+    },
+    {
+      "report_id": "SC-015",
+      "source_language": "ar",
+      "expected_events": [
+        {
+          "event_type": "structural_damage",
+          "location_ref": "جامعة النور",
+          "location_tokens": [
+            "النور",
+            "جامعة"
+          ],
+          "people_affected": null,
+          "severity": "unknown"
+        }
+      ],
+      "is_duplicate_of": null,
+      "conflicts_with": [],
+      "should_abstain_fields": [
+        "people_affected",
+        "severity"
+      ],
+      "design_note": ""
+    },
+    {
+      "report_id": "SC-016",
+      "source_language": "ar",
+      "expected_events": [
+        {
+          "event_type": "power_outage",
+          "location_ref": "المدينة",
+          "location_tokens": [
+            "المدينة"
+          ],
+          "people_affected": null,
+          "severity": "unknown"
+        }
+      ],
+      "is_duplicate_of": null,
+      "conflicts_with": [],
+      "should_abstain_fields": [
+        "people_affected",
+        "severity"
+      ],
+      "design_note": ""
+    },
+    {
+      "report_id": "SC-017",
+      "source_language": "dar",
+      "expected_events": [
+        {
+          "event_type": "water_outage",
+          "location_ref": "الحارة",
+          "location_tokens": [
+            "الحارة"
+          ],
+          "people_affected": null,
+          "severity": "unknown"
+        }
+      ],
+      "is_duplicate_of": null,
+      "conflicts_with": [],
+      "should_abstain_fields": [
+        "people_affected",
+        "severity"
+      ],
+      "design_note": ""
+    },
+    {
+      "report_id": "SC-018",
+      "source_language": "fr",
+      "expected_events": [
+        {
+          "event_type": "shelter_capacity",
+          "location_ref": "hopital Al-Amal",
+          "location_tokens": [
+            "alamal",
+            "hopital"
+          ],
+          "people_affected": null,
+          "severity": "unknown"
+        }
+      ],
+      "is_duplicate_of": null,
+      "conflicts_with": [],
+      "should_abstain_fields": [
+        "people_affected",
+        "severity"
+      ],
+      "design_note": ""
+    },
+    {
+      "report_id": "SC-019",
+      "source_language": "ar",
+      "expected_events": [
+        {
+          "event_type": "medical_need",
+          "location_ref": "المستشفى",
+          "location_tokens": [
+            "المستشفى"
+          ],
+          "people_affected": 50,
+          "severity": "unknown"
+        }
+      ],
+      "is_duplicate_of": null,
+      "conflicts_with": [],
+      "should_abstain_fields": [
+        "severity"
+      ],
+      "design_note": "deliberate Arabic/French code-switch on the number noun"
+    },
+    {
+      "report_id": "SC-020",
+      "source_language": "dar",
+      "expected_events": [
+        {
+          "event_type": "resource_available",
+          "location_ref": "الملعب الرياضي",
+          "location_tokens": [
+            "الرياضي",
+            "الملعب"
+          ],
+          "people_affected": null,
+          "severity": "unknown"
+        }
+      ],
+      "is_duplicate_of": null,
+      "conflicts_with": [],
+      "should_abstain_fields": [
+        "people_affected",
+        "severity"
+      ],
+      "design_note": ""
+    },
+    {
+      "report_id": "SC-021",
+      "source_language": "en",
+      "expected_events": [
+        {
+          "event_type": "evacuation",
+          "location_ref": "industrial zone",
+          "location_tokens": [
+            "industrial",
+            "zone"
+          ],
+          "people_affected": null,
+          "severity": "unknown"
+        }
+      ],
+      "is_duplicate_of": null,
+      "conflicts_with": [],
+      "should_abstain_fields": [
+        "people_affected",
+        "severity"
+      ],
+      "design_note": ""
+    },
+    {
+      "report_id": "SC-022",
+      "source_language": "fr",
+      "expected_events": [
+        {
+          "event_type": "hazard",
+          "location_ref": "zone industrielle",
+          "location_tokens": [
+            "industrielle",
+            "zone"
+          ],
+          "people_affected": null,
+          "severity": "unknown"
+        }
+      ],
+      "is_duplicate_of": null,
+      "conflicts_with": [],
+      "should_abstain_fields": [
+        "people_affected",
+        "severity"
+      ],
+      "design_note": ""
+    },
+    {
+      "report_id": "SC-023",
+      "source_language": "ar",
+      "expected_events": [
+        {
+          "event_type": "road_blocked",
+          "location_ref": "الدوار الشمالي",
+          "location_tokens": [
+            "الدوار",
+            "الشمالي"
+          ],
+          "people_affected": null,
+          "severity": "unknown"
+        }
+      ],
+      "is_duplicate_of": null,
+      "conflicts_with": [],
+      "should_abstain_fields": [
+        "people_affected",
+        "severity"
+      ],
+      "design_note": ""
+    },
+    {
+      "report_id": "SC-024",
+      "source_language": "dar",
+      "expected_events": [
+        {
+          "event_type": "missing_person",
+          "location_ref": "الحومة",
+          "location_tokens": [
+            "الحومة"
+          ],
+          "people_affected": null,
+          "severity": "unknown"
+        }
+      ],
+      "is_duplicate_of": null,
+      "conflicts_with": [],
+      "should_abstain_fields": [
+        "people_affected",
+        "severity"
+      ],
+      "design_note": ""
+    },
+    {
+      "report_id": "SC-025",
+      "source_language": "fr",
+      "expected_events": [
+        {
+          "event_type": "injury",
+          "location_ref": "hopital Al-Amal",
+          "location_tokens": [
+            "alamal",
+            "hopital"
+          ],
+          "people_affected": 4,
+          "severity": "unknown"
+        }
+      ],
+      "is_duplicate_of": null,
+      "conflicts_with": [
+        "SC-026"
+      ],
+      "should_abstain_fields": [
+        "severity"
+      ],
+      "design_note": "NUMERICAL CONTRADICTION with SC-026 (4 vs 2). CrisisMesh must not average, pick the larger, or pick the more recent. Uses a digit: guards only keep a count that appears verbatim in the source, so a spelled-out numeral yields null, not a guess."
+    },
+    {
+      "report_id": "SC-026",
+      "source_language": "ar",
+      "expected_events": [
+        {
+          "event_type": "injury",
+          "location_ref": "المستشفى",
+          "location_tokens": [
+            "المستشفى"
+          ],
+          "people_affected": 2,
+          "severity": "unknown"
+        }
+      ],
+      "is_duplicate_of": null,
+      "conflicts_with": [
+        "SC-025"
+      ],
+      "should_abstain_fields": [
+        "severity"
+      ],
+      "design_note": ""
+    },
+    {
+      "report_id": "SC-027",
+      "source_language": "fr",
+      "expected_events": [
+        {
+          "event_type": "other",
+          "location_ref": "pont",
+          "location_tokens": [
+            "pont"
+          ],
+          "people_affected": null,
+          "severity": "unknown"
+        }
+      ],
+      "is_duplicate_of": null,
+      "conflicts_with": [],
+      "should_abstain_fields": [
+        "people_affected",
+        "severity"
+      ],
+      "design_note": "AMBIGUOUS. The honest output is 'other'/unknown. A system that picks a confident type here is inventing information."
+    },
+    {
+      "report_id": "SC-028",
+      "source_language": "ar",
+      "expected_events": [],
+      "is_duplicate_of": null,
+      "conflicts_with": [],
+      "should_abstain_fields": [
+        "*"
+      ],
+      "design_note": "NOISE. Garbled input. Correct behaviour is to extract nothing."
+    },
+    {
+      "report_id": "SC-029",
+      "source_language": "en",
+      "expected_events": [],
+      "is_duplicate_of": null,
+      "conflicts_with": [],
+      "should_abstain_fields": [
+        "*"
+      ],
+      "design_note": "PROMPT INJECTION. Must be flagged, sanitized for the model, and never promoted to verified. raw_text stays immutable."
+    },
+    {
+      "report_id": "SC-030",
+      "source_language": "fr",
+      "expected_events": [
+        {
+          "event_type": "road_open",
+          "location_ref": "pont central",
+          "location_tokens": [
+            "central",
+            "pont"
+          ],
+          "people_affected": null,
+          "severity": "unknown"
+        }
+      ],
+      "is_duplicate_of": null,
+      "conflicts_with": [],
+      "should_abstain_fields": [
+        "people_affected",
+        "severity"
+      ],
+      "design_note": "after SC-008 (09:xx blocked). This may be a genuine reopening."
+    },
+    {
+      "report_id": "SC-031",
+      "source_language": "fr",
+      "expected_events": [
+        {
+          "event_type": "resource_available",
+          "location_ref": "stade omnisports",
+          "location_tokens": [
+            "omnisports",
+            "stade"
+          ],
+          "people_affected": null,
+          "severity": "unknown"
+        }
+      ],
+      "is_duplicate_of": null,
+      "conflicts_with": [],
+      "should_abstain_fields": [
+        "people_affected",
+        "severity"
+      ],
+      "design_note": ""
+    },
+    {
+      "report_id": "SC-032",
+      "source_language": "ar",
+      "expected_events": [
+        {
+          "event_type": "resource_available",
+          "location_ref": "الملعب الرياضي",
+          "location_tokens": [
+            "الرياضي",
+            "الملعب"
+          ],
+          "people_affected": null,
+          "severity": "unknown"
+        }
+      ],
+      "is_duplicate_of": null,
+      "conflicts_with": [],
+      "should_abstain_fields": [
+        "people_affected",
+        "severity"
+      ],
+      "design_note": ""
+    },
+    {
+      "report_id": "SC-033",
+      "source_language": "dar",
+      "expected_events": [
+        {
+          "event_type": "resource_available",
+          "location_ref": "stadium",
+          "location_tokens": [
+            "stadium"
+          ],
+          "people_affected": null,
+          "severity": "unknown"
+        }
+      ],
+      "is_duplicate_of": null,
+      "conflicts_with": [],
+      "should_abstain_fields": [
+        "people_affected",
+        "severity"
+      ],
+      "design_note": ""
+    },
+    {
+      "report_id": "SC-034",
+      "source_language": "en",
+      "expected_events": [
+        {
+          "event_type": "resource_available",
+          "location_ref": "sports stadium",
+          "location_tokens": [
+            "sports",
+            "stadium"
+          ],
+          "people_affected": null,
+          "severity": "unknown"
+        }
+      ],
+      "is_duplicate_of": null,
+      "conflicts_with": [],
+      "should_abstain_fields": [
+        "people_affected",
+        "severity"
+      ],
+      "design_note": ""
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+# Normalise line endings so contributors on Windows and Linux do not produce
+# whole-file diffs. Text files are stored with LF and checked out per platform.
+* text=auto eol=lf
+
+*.ps1 text eol=crlf
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Binary assets must never be line-ending normalised.
+*.gguf binary
+*.png binary
+*.jpg binary
+*.ico binary
+*.pdf binary
+*.db binary

@@ -1,0 +1,1711 @@
+{
+  "nodes": [
+    {
+      "id": "report:SC-001",
+      "data": {
+        "kind": "report",
+        "id": "SC-001",
+        "label": "Report SC-001",
+        "lang": "fr",
+        "suspected_injection": false
+      }
+    },
+    {
+      "id": "report:SC-002",
+      "data": {
+        "kind": "report",
+        "id": "SC-002",
+        "label": "Report SC-002",
+        "lang": "ar",
+        "suspected_injection": false
+      }
+    },
+    {
+      "id": "report:SC-003",
+      "data": {
+        "kind": "report",
+        "id": "SC-003",
+        "label": "Report SC-003",
+        "lang": "dar",
+        "suspected_injection": false
+      }
+    },
+    {
+      "id": "report:SC-004",
+      "data": {
+        "kind": "report",
+        "id": "SC-004",
+        "label": "Report SC-004",
+        "lang": "en",
+        "suspected_injection": false
+      }
+    },
+    {
+      "id": "report:SC-005",
+      "data": {
+        "kind": "report",
+        "id": "SC-005",
+        "label": "Report SC-005",
+        "lang": "fr",
+        "suspected_injection": false
+      }
+    },
+    {
+      "id": "report:SC-006",
+      "data": {
+        "kind": "report",
+        "id": "SC-006",
+        "label": "Report SC-006",
+        "lang": "fr",
+        "suspected_injection": false
+      }
+    },
+    {
+      "id": "report:SC-007",
+      "data": {
+        "kind": "report",
+        "id": "SC-007",
+        "label": "Report SC-007",
+        "lang": "fr",
+        "suspected_injection": false
+      }
+    },
+    {
+      "id": "report:SC-008",
+      "data": {
+        "kind": "report",
+        "id": "SC-008",
+        "label": "Report SC-008",
+        "lang": "fr",
+        "suspected_injection": false
+      }
+    },
+    {
+      "id": "report:SC-009",
+      "data": {
+        "kind": "report",
+        "id": "SC-009",
+        "label": "Report SC-009",
+        "lang": "dar",
+        "suspected_injection": false
+      }
+    },
+    {
+      "id": "report:SC-010",
+      "data": {
+        "kind": "report",
+        "id": "SC-010",
+        "label": "Report SC-010",
+        "lang": "dar",
+        "suspected_injection": false
+      }
+    },
+    {
+      "id": "report:SC-011",
+      "data": {
+        "kind": "report",
+        "id": "SC-011",
+        "label": "Report SC-011",
+        "lang": "fr",
+        "suspected_injection": false
+      }
+    },
+    {
+      "id": "report:SC-012",
+      "data": {
+        "kind": "report",
+        "id": "SC-012",
+        "label": "Report SC-012",
+        "lang": "ar",
+        "suspected_injection": false
+      }
+    },
+    {
+      "id": "report:SC-013",
+      "data": {
+        "kind": "report",
+        "id": "SC-013",
+        "label": "Report SC-013",
+        "lang": "fr",
+        "suspected_injection": false
+      }
+    },
+    {
+      "id": "report:SC-014",
+      "data": {
+        "kind": "report",
+        "id": "SC-014",
+        "label": "Report SC-014",
+        "lang": "en",
+        "suspected_injection": false
+      }
+    },
+    {
+      "id": "report:SC-015",
+      "data": {
+        "kind": "report",
+        "id": "SC-015",
+        "label": "Report SC-015",
+        "lang": "ar",
+        "suspected_injection": false
+      }
+    },
+    {
+      "id": "report:SC-016",
+      "data": {
+        "kind": "report",
+        "id": "SC-016",
+        "label": "Report SC-016",
+        "lang": "ar",
+        "suspected_injection": false
+      }
+    },
+    {
+      "id": "report:SC-017",
+      "data": {
+        "kind": "report",
+        "id": "SC-017",
+        "label": "Report SC-017",
+        "lang": "dar",
+        "suspected_injection": false
+      }
+    },
+    {
+      "id": "report:SC-018",
+      "data": {
+        "kind": "report",
+        "id": "SC-018",
+        "label": "Report SC-018",
+        "lang": "fr",
+        "suspected_injection": false
+      }
+    },
+    {
+      "id": "report:SC-019",
+      "data": {
+        "kind": "report",
+        "id": "SC-019",
+        "label": "Report SC-019",
+        "lang": "ar",
+        "suspected_injection": false
+      }
+    },
+    {
+      "id": "report:SC-020",
+      "data": {
+        "kind": "report",
+        "id": "SC-020",
+        "label": "Report SC-020",
+        "lang": "dar",
+        "suspected_injection": false
+      }
+    },
+    {
+      "id": "report:SC-021",
+      "data": {
+        "kind": "report",
+        "id": "SC-021",
+        "label": "Report SC-021",
+        "lang": "en",
+        "suspected_injection": false
+      }
+    },
+    {
+      "id": "report:SC-022",
+      "data": {
+        "kind": "report",
+        "id": "SC-022",
+        "label": "Report SC-022",
+        "lang": "fr",
+        "suspected_injection": false
+      }
+    },
+    {
+      "id": "report:SC-023",
+      "data": {
+        "kind": "report",
+        "id": "SC-023",
+        "label": "Report SC-023",
+        "lang": "ar",
+        "suspected_injection": false
+      }
+    },
+    {
+      "id": "report:SC-024",
+      "data": {
+        "kind": "report",
+        "id": "SC-024",
+        "label": "Report SC-024",
+        "lang": "dar",
+        "suspected_injection": false
+      }
+    },
+    {
+      "id": "report:SC-025",
+      "data": {
+        "kind": "report",
+        "id": "SC-025",
+        "label": "Report SC-025",
+        "lang": "fr",
+        "suspected_injection": false
+      }
+    },
+    {
+      "id": "report:SC-026",
+      "data": {
+        "kind": "report",
+        "id": "SC-026",
+        "label": "Report SC-026",
+        "lang": "ar",
+        "suspected_injection": false
+      }
+    },
+    {
+      "id": "report:SC-027",
+      "data": {
+        "kind": "report",
+        "id": "SC-027",
+        "label": "Report SC-027",
+        "lang": "fr",
+        "suspected_injection": false
+      }
+    },
+    {
+      "id": "report:SC-028",
+      "data": {
+        "kind": "report",
+        "id": "SC-028",
+        "label": "Report SC-028",
+        "lang": "ar",
+        "suspected_injection": false
+      }
+    },
+    {
+      "id": "report:SC-029",
+      "data": {
+        "kind": "report",
+        "id": "SC-029",
+        "label": "Report SC-029",
+        "lang": "en",
+        "suspected_injection": true
+      }
+    },
+    {
+      "id": "report:SC-030",
+      "data": {
+        "kind": "report",
+        "id": "SC-030",
+        "label": "Report SC-030",
+        "lang": "fr",
+        "suspected_injection": false
+      }
+    },
+    {
+      "id": "report:SC-031",
+      "data": {
+        "kind": "report",
+        "id": "SC-031",
+        "label": "Report SC-031",
+        "lang": "fr",
+        "suspected_injection": false
+      }
+    },
+    {
+      "id": "report:SC-032",
+      "data": {
+        "kind": "report",
+        "id": "SC-032",
+        "label": "Report SC-032",
+        "lang": "ar",
+        "suspected_injection": false
+      }
+    },
+    {
+      "id": "report:SC-033",
+      "data": {
+        "kind": "report",
+        "id": "SC-033",
+        "label": "Report SC-033",
+        "lang": "dar",
+        "suspected_injection": false
+      }
+    },
+    {
+      "id": "report:SC-034",
+      "data": {
+        "kind": "report",
+        "id": "SC-034",
+        "label": "Report SC-034",
+        "lang": "en",
+        "suspected_injection": false
+      }
+    },
+    {
+      "id": "event:EVT-C91725B763",
+      "data": {
+        "kind": "event",
+        "id": "EVT-C91725B763",
+        "label": "road blocked",
+        "event_type": "road_blocked",
+        "verification_state": "corroborated",
+        "severity": "unknown",
+        "location": "pont central",
+        "people_affected": null,
+        "sources": 8,
+        "color": "#22c55e"
+      }
+    },
+    {
+      "id": "place:pont central",
+      "data": {
+        "kind": "place",
+        "id": "pont central",
+        "label": "pont central"
+      }
+    },
+    {
+      "id": "event:EVT-4DCBF54A98",
+      "data": {
+        "kind": "event",
+        "id": "EVT-4DCBF54A98",
+        "label": "road blocked",
+        "event_type": "road_blocked",
+        "verification_state": "corroborated",
+        "severity": "unknown",
+        "location": "non specified",
+        "people_affected": null,
+        "sources": 3,
+        "color": "#22c55e"
+      }
+    },
+    {
+      "id": "place:non specified",
+      "data": {
+        "kind": "place",
+        "id": "non specified",
+        "label": "non specified"
+      }
+    },
+    {
+      "id": "event:EVT-63438E7FF3",
+      "data": {
+        "kind": "event",
+        "id": "EVT-63438E7FF3",
+        "label": "road blocked",
+        "event_type": "road_blocked",
+        "verification_state": "disputed",
+        "severity": "unknown",
+        "location": "الجسر المركزي",
+        "people_affected": null,
+        "sources": 8,
+        "color": "#f97316"
+      }
+    },
+    {
+      "id": "place:الجسر المركزي",
+      "data": {
+        "kind": "place",
+        "id": "الجسر المركزي",
+        "label": "الجسر المركزي"
+      }
+    },
+    {
+      "id": "event:EVT-897B28B6DF",
+      "data": {
+        "kind": "event",
+        "id": "EVT-897B28B6DF",
+        "label": "road blocked",
+        "event_type": "road_blocked",
+        "verification_state": "disputed",
+        "severity": "unknown",
+        "location": "الجسر المركزي",
+        "people_affected": null,
+        "sources": 8,
+        "color": "#f97316"
+      }
+    },
+    {
+      "id": "event:EVT-F889855C63",
+      "data": {
+        "kind": "event",
+        "id": "EVT-F889855C63",
+        "label": "road blocked",
+        "event_type": "road_blocked",
+        "verification_state": "disputed",
+        "severity": "unknown",
+        "location": "Central bridge",
+        "people_affected": null,
+        "sources": 8,
+        "color": "#f97316"
+      }
+    },
+    {
+      "id": "place:central bridge",
+      "data": {
+        "kind": "place",
+        "id": "Central bridge",
+        "label": "Central bridge"
+      }
+    },
+    {
+      "id": "event:EVT-5DF21589D7",
+      "data": {
+        "kind": "event",
+        "id": "EVT-5DF21589D7",
+        "label": "road blocked",
+        "event_type": "road_blocked",
+        "verification_state": "corroborated",
+        "severity": "unknown",
+        "location": "pont central",
+        "people_affected": null,
+        "sources": 8,
+        "color": "#22c55e"
+      }
+    },
+    {
+      "id": "event:EVT-6A7FD6F0EB",
+      "data": {
+        "kind": "event",
+        "id": "EVT-6A7FD6F0EB",
+        "label": "road blocked",
+        "event_type": "road_blocked",
+        "verification_state": "corroborated",
+        "severity": "unknown",
+        "location": "non specified",
+        "people_affected": null,
+        "sources": 3,
+        "color": "#22c55e"
+      }
+    },
+    {
+      "id": "event:EVT-98D794B523",
+      "data": {
+        "kind": "event",
+        "id": "EVT-98D794B523",
+        "label": "road blocked",
+        "event_type": "road_blocked",
+        "verification_state": "corroborated",
+        "severity": "unknown",
+        "location": "pont central",
+        "people_affected": null,
+        "sources": 8,
+        "color": "#22c55e"
+      }
+    },
+    {
+      "id": "event:EVT-9F18731A4E",
+      "data": {
+        "kind": "event",
+        "id": "EVT-9F18731A4E",
+        "label": "road blocked",
+        "event_type": "road_blocked",
+        "verification_state": "corroborated",
+        "severity": "unknown",
+        "location": "non specified",
+        "people_affected": null,
+        "sources": 3,
+        "color": "#22c55e"
+      }
+    },
+    {
+      "id": "event:EVT-58D9E0DD53",
+      "data": {
+        "kind": "event",
+        "id": "EVT-58D9E0DD53",
+        "label": "road blocked",
+        "event_type": "road_blocked",
+        "verification_state": "corroborated",
+        "severity": "unknown",
+        "location": "pont central",
+        "people_affected": null,
+        "sources": 8,
+        "color": "#22c55e"
+      }
+    },
+    {
+      "id": "event:EVT-B5340077A5",
+      "data": {
+        "kind": "event",
+        "id": "EVT-B5340077A5",
+        "label": "road blocked",
+        "event_type": "road_blocked",
+        "verification_state": "corroborated",
+        "severity": "unknown",
+        "location": "non specified",
+        "people_affected": null,
+        "sources": 3,
+        "color": "#22c55e"
+      }
+    },
+    {
+      "id": "event:EVT-27FA85904F",
+      "data": {
+        "kind": "event",
+        "id": "EVT-27FA85904F",
+        "label": "road blocked",
+        "event_type": "road_blocked",
+        "verification_state": "corroborated",
+        "severity": "unknown",
+        "location": "pont central",
+        "people_affected": null,
+        "sources": 8,
+        "color": "#22c55e"
+      }
+    },
+    {
+      "id": "event:EVT-5D486AA5BB",
+      "data": {
+        "kind": "event",
+        "id": "EVT-5D486AA5BB",
+        "label": "road open",
+        "event_type": "road_open",
+        "verification_state": "disputed",
+        "severity": "unknown",
+        "location": "الجسر المركزي",
+        "people_affected": null,
+        "sources": 1,
+        "color": "#f97316"
+      }
+    },
+    {
+      "id": "event:EVT-9BF4D723E2",
+      "data": {
+        "kind": "event",
+        "id": "EVT-9BF4D723E2",
+        "label": "injury",
+        "event_type": "injury",
+        "verification_state": "unverified",
+        "severity": "high",
+        "location": null,
+        "people_affected": null,
+        "sources": 1,
+        "color": "#eab308"
+      }
+    },
+    {
+      "id": "event:EVT-E120CF51E4",
+      "data": {
+        "kind": "event",
+        "id": "EVT-E120CF51E4",
+        "label": "injury",
+        "event_type": "injury",
+        "verification_state": "unverified",
+        "severity": "unknown",
+        "location": "près du stade",
+        "people_affected": null,
+        "sources": 1,
+        "color": "#eab308"
+      }
+    },
+    {
+      "id": "place:près du stade",
+      "data": {
+        "kind": "place",
+        "id": "près du stade",
+        "label": "près du stade"
+      }
+    },
+    {
+      "id": "event:EVT-13B11C4796",
+      "data": {
+        "kind": "event",
+        "id": "EVT-13B11C4796",
+        "label": "trapped person",
+        "event_type": "trapped_person",
+        "verification_state": "unverified",
+        "severity": "unknown",
+        "location": "MEDINA القديمة",
+        "people_affected": null,
+        "sources": 1,
+        "color": "#eab308"
+      }
+    },
+    {
+      "id": "place:medina القديمة",
+      "data": {
+        "kind": "place",
+        "id": "MEDINA القديمة",
+        "label": "MEDINA القديمة"
+      }
+    },
+    {
+      "id": "event:EVT-13416F0A01",
+      "data": {
+        "kind": "event",
+        "id": "EVT-13416F0A01",
+        "label": "structural damage",
+        "event_type": "structural_damage",
+        "verification_state": "unverified",
+        "severity": "unknown",
+        "location": "vieille medina",
+        "people_affected": null,
+        "sources": 1,
+        "color": "#eab308"
+      }
+    },
+    {
+      "id": "place:vieille medina",
+      "data": {
+        "kind": "place",
+        "id": "vieille medina",
+        "label": "vieille medina"
+      }
+    },
+    {
+      "id": "event:EVT-7D5D28DF6A",
+      "data": {
+        "kind": "event",
+        "id": "EVT-7D5D28DF6A",
+        "label": "structural damage",
+        "event_type": "structural_damage",
+        "verification_state": "unverified",
+        "severity": "unknown",
+        "location": "old medina residential block",
+        "people_affected": null,
+        "sources": 1,
+        "color": "#eab308"
+      }
+    },
+    {
+      "id": "place:old medina residential block",
+      "data": {
+        "kind": "place",
+        "id": "old medina residential block",
+        "label": "old medina residential block"
+      }
+    },
+    {
+      "id": "event:EVT-04DB9E67F1",
+      "data": {
+        "kind": "event",
+        "id": "EVT-04DB9E67F1",
+        "label": "structural damage",
+        "event_type": "structural_damage",
+        "verification_state": "unverified",
+        "severity": "unknown",
+        "location": "الجامعة",
+        "people_affected": null,
+        "sources": 1,
+        "color": "#eab308"
+      }
+    },
+    {
+      "id": "place:الجامعة",
+      "data": {
+        "kind": "place",
+        "id": "الجامعة",
+        "label": "الجامعة"
+      }
+    },
+    {
+      "id": "event:EVT-C302803DE2",
+      "data": {
+        "kind": "event",
+        "id": "EVT-C302803DE2",
+        "label": "power outage",
+        "event_type": "power_outage",
+        "verification_state": "unverified",
+        "severity": "unknown",
+        "location": "المدينة",
+        "people_affected": null,
+        "sources": 1,
+        "color": "#eab308"
+      }
+    },
+    {
+      "id": "place:المدينة",
+      "data": {
+        "kind": "place",
+        "id": "المدينة",
+        "label": "المدينة"
+      }
+    },
+    {
+      "id": "event:EVT-72230A49F0",
+      "data": {
+        "kind": "event",
+        "id": "EVT-72230A49F0",
+        "label": "water outage",
+        "event_type": "water_outage",
+        "verification_state": "unverified",
+        "severity": "unknown",
+        "location": "الحارة",
+        "people_affected": null,
+        "sources": 1,
+        "color": "#eab308"
+      }
+    },
+    {
+      "id": "place:الحارة",
+      "data": {
+        "kind": "place",
+        "id": "الحارة",
+        "label": "الحارة"
+      }
+    },
+    {
+      "id": "event:EVT-75EACB2426",
+      "data": {
+        "kind": "event",
+        "id": "EVT-75EACB2426",
+        "label": "food need",
+        "event_type": "food_need",
+        "verification_state": "unverified",
+        "severity": "unknown",
+        "location": null,
+        "people_affected": null,
+        "sources": 1,
+        "color": "#eab308"
+      }
+    },
+    {
+      "id": "event:EVT-2F4AC6236D",
+      "data": {
+        "kind": "event",
+        "id": "EVT-2F4AC6236D",
+        "label": "shelter capacity",
+        "event_type": "shelter_capacity",
+        "verification_state": "unverified",
+        "severity": "unknown",
+        "location": "hopital Al-Amal",
+        "people_affected": null,
+        "sources": 1,
+        "color": "#eab308"
+      }
+    },
+    {
+      "id": "place:hopital al-amal",
+      "data": {
+        "kind": "place",
+        "id": "hopital Al-Amal",
+        "label": "hopital Al-Amal"
+      }
+    },
+    {
+      "id": "event:EVT-CF9836F206",
+      "data": {
+        "kind": "event",
+        "id": "EVT-CF9836F206",
+        "label": "shelter capacity",
+        "event_type": "shelter_capacity",
+        "verification_state": "unverified",
+        "severity": "unknown",
+        "location": "المستشفى",
+        "people_affected": null,
+        "sources": 1,
+        "color": "#eab308"
+      }
+    },
+    {
+      "id": "place:المستشفى",
+      "data": {
+        "kind": "place",
+        "id": "المستشفى",
+        "label": "المستشفى"
+      }
+    },
+    {
+      "id": "event:EVT-5FF586838B",
+      "data": {
+        "kind": "event",
+        "id": "EVT-5FF586838B",
+        "label": "injury",
+        "event_type": "injury",
+        "verification_state": "unverified",
+        "severity": "unknown",
+        "location": "Sopra",
+        "people_affected": 50,
+        "sources": 1,
+        "color": "#eab308"
+      }
+    },
+    {
+      "id": "place:sopra",
+      "data": {
+        "kind": "place",
+        "id": "Sopra",
+        "label": "Sopra"
+      }
+    },
+    {
+      "id": "people:50",
+      "data": {
+        "kind": "people",
+        "id": "50",
+        "label": "50 people"
+      }
+    },
+    {
+      "id": "event:EVT-60F2114620",
+      "data": {
+        "kind": "event",
+        "id": "EVT-60F2114620",
+        "label": "water outage",
+        "event_type": "water_outage",
+        "verification_state": "corroborated",
+        "severity": "unknown",
+        "location": "الملعب الرياضي",
+        "people_affected": null,
+        "sources": 2,
+        "color": "#22c55e"
+      }
+    },
+    {
+      "id": "place:الملعب الرياضي",
+      "data": {
+        "kind": "place",
+        "id": "الملعب الرياضي",
+        "label": "الملعب الرياضي"
+      }
+    },
+    {
+      "id": "event:EVT-A82ACDD757",
+      "data": {
+        "kind": "event",
+        "id": "EVT-A82ACDD757",
+        "label": "evacuation",
+        "event_type": "evacuation",
+        "verification_state": "unverified",
+        "severity": "unknown",
+        "location": "industrial zone",
+        "people_affected": null,
+        "sources": 1,
+        "color": "#eab308"
+      }
+    },
+    {
+      "id": "place:industrial zone",
+      "data": {
+        "kind": "place",
+        "id": "industrial zone",
+        "label": "industrial zone"
+      }
+    },
+    {
+      "id": "event:EVT-EC3112566E",
+      "data": {
+        "kind": "event",
+        "id": "EVT-EC3112566E",
+        "label": "hazard",
+        "event_type": "hazard",
+        "verification_state": "unverified",
+        "severity": "unknown",
+        "location": "zone industrielle",
+        "people_affected": null,
+        "sources": 1,
+        "color": "#eab308"
+      }
+    },
+    {
+      "id": "place:zone industrielle",
+      "data": {
+        "kind": "place",
+        "id": "zone industrielle",
+        "label": "zone industrielle"
+      }
+    },
+    {
+      "id": "event:EVT-2E2F90A677",
+      "data": {
+        "kind": "event",
+        "id": "EVT-2E2F90A677",
+        "label": "road blocked",
+        "event_type": "road_blocked",
+        "verification_state": "unverified",
+        "severity": "unknown",
+        "location": "الدوار الشمالي",
+        "people_affected": null,
+        "sources": 1,
+        "color": "#eab308"
+      }
+    },
+    {
+      "id": "place:الدوار الشمالي",
+      "data": {
+        "kind": "place",
+        "id": "الدوار الشمالي",
+        "label": "الدوار الشمالي"
+      }
+    },
+    {
+      "id": "event:EVT-C45B67E434",
+      "data": {
+        "kind": "event",
+        "id": "EVT-C45B67E434",
+        "label": "injury",
+        "event_type": "injury",
+        "verification_state": "unverified",
+        "severity": "unknown",
+        "location": "السرو ديالو",
+        "people_affected": null,
+        "sources": 1,
+        "color": "#eab308"
+      }
+    },
+    {
+      "id": "place:السرو ديالو",
+      "data": {
+        "kind": "place",
+        "id": "السرو ديالو",
+        "label": "السرو ديالو"
+      }
+    },
+    {
+      "id": "event:EVT-9DB526D84A",
+      "data": {
+        "kind": "event",
+        "id": "EVT-9DB526D84A",
+        "label": "injury",
+        "event_type": "injury",
+        "verification_state": "unverified",
+        "severity": "unknown",
+        "location": "hopital Al-Amal",
+        "people_affected": 4,
+        "sources": 1,
+        "color": "#eab308"
+      }
+    },
+    {
+      "id": "people:4",
+      "data": {
+        "kind": "people",
+        "id": "4",
+        "label": "4 people"
+      }
+    },
+    {
+      "id": "event:EVT-B0AE7AAF8F",
+      "data": {
+        "kind": "event",
+        "id": "EVT-B0AE7AAF8F",
+        "label": "injury",
+        "event_type": "injury",
+        "verification_state": "unverified",
+        "severity": "unknown",
+        "location": null,
+        "people_affected": 2,
+        "sources": 1,
+        "color": "#eab308"
+      }
+    },
+    {
+      "id": "people:2",
+      "data": {
+        "kind": "people",
+        "id": "2",
+        "label": "2 people"
+      }
+    },
+    {
+      "id": "event:EVT-79A19A451D",
+      "data": {
+        "kind": "event",
+        "id": "EVT-79A19A451D",
+        "label": "other",
+        "event_type": "other",
+        "verification_state": "unverified",
+        "severity": "unknown",
+        "location": "pont",
+        "people_affected": null,
+        "sources": 1,
+        "color": "#eab308"
+      }
+    },
+    {
+      "id": "place:pont",
+      "data": {
+        "kind": "place",
+        "id": "pont",
+        "label": "pont"
+      }
+    },
+    {
+      "id": "event:EVT-F9745DF773",
+      "data": {
+        "kind": "event",
+        "id": "EVT-F9745DF773",
+        "label": "other",
+        "event_type": "other",
+        "verification_state": "unverified",
+        "severity": "unknown",
+        "location": "Stadium",
+        "people_affected": null,
+        "sources": 1,
+        "color": "#eab308"
+      }
+    },
+    {
+      "id": "place:stadium",
+      "data": {
+        "kind": "place",
+        "id": "Stadium",
+        "label": "Stadium"
+      }
+    },
+    {
+      "id": "event:EVT-3C39C0FEC5",
+      "data": {
+        "kind": "event",
+        "id": "EVT-3C39C0FEC5",
+        "label": "road open",
+        "event_type": "road_open",
+        "verification_state": "unverified",
+        "severity": "unknown",
+        "location": "bridge",
+        "people_affected": null,
+        "sources": 1,
+        "color": "#eab308"
+      }
+    },
+    {
+      "id": "place:bridge",
+      "data": {
+        "kind": "place",
+        "id": "bridge",
+        "label": "bridge"
+      }
+    },
+    {
+      "id": "event:EVT-84026D14CB",
+      "data": {
+        "kind": "event",
+        "id": "EVT-84026D14CB",
+        "label": "fire",
+        "event_type": "fire",
+        "verification_state": "unverified",
+        "severity": "unknown",
+        "location": null,
+        "people_affected": null,
+        "sources": 1,
+        "color": "#eab308"
+      }
+    },
+    {
+      "id": "event:EVT-88EA72AAC1",
+      "data": {
+        "kind": "event",
+        "id": "EVT-88EA72AAC1",
+        "label": "road open",
+        "event_type": "road_open",
+        "verification_state": "unverified",
+        "severity": "unknown",
+        "location": null,
+        "people_affected": null,
+        "sources": 1,
+        "color": "#eab308"
+      }
+    },
+    {
+      "id": "event:EVT-23BF2AE60D",
+      "data": {
+        "kind": "event",
+        "id": "EVT-23BF2AE60D",
+        "label": "road blocked",
+        "event_type": "road_blocked",
+        "verification_state": "corroborated",
+        "severity": "unknown",
+        "location": "pont central",
+        "people_affected": null,
+        "sources": 8,
+        "color": "#22c55e"
+      }
+    },
+    {
+      "id": "event:EVT-B750AFB396",
+      "data": {
+        "kind": "event",
+        "id": "EVT-B750AFB396",
+        "label": "water outage",
+        "event_type": "water_outage",
+        "verification_state": "corroborated",
+        "severity": "unknown",
+        "location": "stade omnisports",
+        "people_affected": null,
+        "sources": 2,
+        "color": "#22c55e"
+      }
+    },
+    {
+      "id": "place:stade omnisports",
+      "data": {
+        "kind": "place",
+        "id": "stade omnisports",
+        "label": "stade omnisports"
+      }
+    },
+    {
+      "id": "event:EVT-103A803962",
+      "data": {
+        "kind": "event",
+        "id": "EVT-103A803962",
+        "label": "resource available",
+        "event_type": "resource_available",
+        "verification_state": "corroborated",
+        "severity": "unknown",
+        "location": "stade omnisports",
+        "people_affected": null,
+        "sources": 2,
+        "color": "#22c55e"
+      }
+    },
+    {
+      "id": "event:EVT-077CC924A8",
+      "data": {
+        "kind": "event",
+        "id": "EVT-077CC924A8",
+        "label": "other",
+        "event_type": "other",
+        "verification_state": "unverified",
+        "severity": "unknown",
+        "location": "الملعب الرياضي",
+        "people_affected": null,
+        "sources": 1,
+        "color": "#eab308"
+      }
+    },
+    {
+      "id": "event:EVT-A884C7A1CC",
+      "data": {
+        "kind": "event",
+        "id": "EVT-A884C7A1CC",
+        "label": "injury",
+        "event_type": "injury",
+        "verification_state": "unverified",
+        "severity": "unknown",
+        "location": "kaln}diro stadium rah maftouh",
+        "people_affected": null,
+        "sources": 1,
+        "color": "#eab308"
+      }
+    },
+    {
+      "id": "place:kaln}diro stadium rah maftouh",
+      "data": {
+        "kind": "place",
+        "id": "kaln}diro stadium rah maftouh",
+        "label": "kaln}diro stadium rah maftouh"
+      }
+    },
+    {
+      "id": "event:EVT-64A72CDF2A",
+      "data": {
+        "kind": "event",
+        "id": "EVT-64A72CDF2A",
+        "label": "resource available",
+        "event_type": "resource_available",
+        "verification_state": "corroborated",
+        "severity": "unknown",
+        "location": "sports stadium",
+        "people_affected": null,
+        "sources": 2,
+        "color": "#22c55e"
+      }
+    },
+    {
+      "id": "place:sports stadium",
+      "data": {
+        "kind": "place",
+        "id": "sports stadium",
+        "label": "sports stadium"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "event:EVT-C91725B763",
+      "target": "report:SC-001",
+      "rel": "reported_by"
+    },
+    {
+      "source": "event:EVT-C91725B763",
+      "target": "place:pont central",
+      "rel": "occurred_at"
+    },
+    {
+      "source": "event:EVT-C91725B763",
+      "target": "event:EVT-5DF21589D7",
+      "rel": "corroborates"
+    },
+    {
+      "source": "event:EVT-4DCBF54A98",
+      "target": "report:SC-001",
+      "rel": "reported_by"
+    },
+    {
+      "source": "event:EVT-4DCBF54A98",
+      "target": "place:non specified",
+      "rel": "occurred_at"
+    },
+    {
+      "source": "event:EVT-4DCBF54A98",
+      "target": "event:EVT-6A7FD6F0EB",
+      "rel": "corroborates"
+    },
+    {
+      "source": "event:EVT-63438E7FF3",
+      "target": "report:SC-002",
+      "rel": "reported_by"
+    },
+    {
+      "source": "event:EVT-63438E7FF3",
+      "target": "place:الجسر المركزي",
+      "rel": "occurred_at"
+    },
+    {
+      "source": "event:EVT-63438E7FF3",
+      "target": "event:EVT-5D486AA5BB",
+      "rel": "contradicts",
+      "conflict_id": "CFL-F91E61885A",
+      "conflict_type": "status",
+      "resolved": false
+    },
+    {
+      "source": "event:EVT-63438E7FF3",
+      "target": "event:EVT-897B28B6DF",
+      "rel": "corroborates"
+    },
+    {
+      "source": "event:EVT-897B28B6DF",
+      "target": "report:SC-003",
+      "rel": "reported_by"
+    },
+    {
+      "source": "event:EVT-897B28B6DF",
+      "target": "place:الجسر المركزي",
+      "rel": "occurred_at"
+    },
+    {
+      "source": "event:EVT-897B28B6DF",
+      "target": "event:EVT-5D486AA5BB",
+      "rel": "contradicts",
+      "conflict_id": "CFL-E3B7CE9DAB",
+      "conflict_type": "status",
+      "resolved": false
+    },
+    {
+      "source": "event:EVT-F889855C63",
+      "target": "report:SC-004",
+      "rel": "reported_by"
+    },
+    {
+      "source": "event:EVT-F889855C63",
+      "target": "place:central bridge",
+      "rel": "occurred_at"
+    },
+    {
+      "source": "event:EVT-F889855C63",
+      "target": "event:EVT-5D486AA5BB",
+      "rel": "contradicts",
+      "conflict_id": "CFL-54ACCEA8AF",
+      "conflict_type": "status",
+      "resolved": false
+    },
+    {
+      "source": "event:EVT-5DF21589D7",
+      "target": "report:SC-005",
+      "rel": "reported_by"
+    },
+    {
+      "source": "event:EVT-5DF21589D7",
+      "target": "place:pont central",
+      "rel": "occurred_at"
+    },
+    {
+      "source": "event:EVT-5DF21589D7",
+      "target": "event:EVT-98D794B523",
+      "rel": "corroborates"
+    },
+    {
+      "source": "event:EVT-6A7FD6F0EB",
+      "target": "report:SC-005",
+      "rel": "reported_by"
+    },
+    {
+      "source": "event:EVT-6A7FD6F0EB",
+      "target": "place:non specified",
+      "rel": "occurred_at"
+    },
+    {
+      "source": "event:EVT-6A7FD6F0EB",
+      "target": "event:EVT-9F18731A4E",
+      "rel": "corroborates"
+    },
+    {
+      "source": "event:EVT-98D794B523",
+      "target": "report:SC-006",
+      "rel": "reported_by"
+    },
+    {
+      "source": "event:EVT-98D794B523",
+      "target": "place:pont central",
+      "rel": "occurred_at"
+    },
+    {
+      "source": "event:EVT-98D794B523",
+      "target": "event:EVT-58D9E0DD53",
+      "rel": "corroborates"
+    },
+    {
+      "source": "event:EVT-9F18731A4E",
+      "target": "report:SC-006",
+      "rel": "reported_by"
+    },
+    {
+      "source": "event:EVT-9F18731A4E",
+      "target": "place:non specified",
+      "rel": "occurred_at"
+    },
+    {
+      "source": "event:EVT-9F18731A4E",
+      "target": "event:EVT-B5340077A5",
+      "rel": "corroborates"
+    },
+    {
+      "source": "event:EVT-58D9E0DD53",
+      "target": "report:SC-007",
+      "rel": "reported_by"
+    },
+    {
+      "source": "event:EVT-58D9E0DD53",
+      "target": "place:pont central",
+      "rel": "occurred_at"
+    },
+    {
+      "source": "event:EVT-58D9E0DD53",
+      "target": "event:EVT-27FA85904F",
+      "rel": "corroborates"
+    },
+    {
+      "source": "event:EVT-B5340077A5",
+      "target": "report:SC-007",
+      "rel": "reported_by"
+    },
+    {
+      "source": "event:EVT-B5340077A5",
+      "target": "place:non specified",
+      "rel": "occurred_at"
+    },
+    {
+      "source": "event:EVT-27FA85904F",
+      "target": "report:SC-008",
+      "rel": "reported_by"
+    },
+    {
+      "source": "event:EVT-27FA85904F",
+      "target": "place:pont central",
+      "rel": "occurred_at"
+    },
+    {
+      "source": "event:EVT-27FA85904F",
+      "target": "event:EVT-23BF2AE60D",
+      "rel": "corroborates"
+    },
+    {
+      "source": "event:EVT-5D486AA5BB",
+      "target": "report:SC-009",
+      "rel": "reported_by"
+    },
+    {
+      "source": "event:EVT-5D486AA5BB",
+      "target": "place:الجسر المركزي",
+      "rel": "occurred_at"
+    },
+    {
+      "source": "event:EVT-9BF4D723E2",
+      "target": "report:SC-010",
+      "rel": "reported_by"
+    },
+    {
+      "source": "event:EVT-E120CF51E4",
+      "target": "report:SC-011",
+      "rel": "reported_by"
+    },
+    {
+      "source": "event:EVT-E120CF51E4",
+      "target": "place:près du stade",
+      "rel": "occurred_at"
+    },
+    {
+      "source": "event:EVT-13B11C4796",
+      "target": "report:SC-012",
+      "rel": "reported_by"
+    },
+    {
+      "source": "event:EVT-13B11C4796",
+      "target": "place:medina القديمة",
+      "rel": "occurred_at"
+    },
+    {
+      "source": "event:EVT-13416F0A01",
+      "target": "report:SC-013",
+      "rel": "reported_by"
+    },
+    {
+      "source": "event:EVT-13416F0A01",
+      "target": "place:vieille medina",
+      "rel": "occurred_at"
+    },
+    {
+      "source": "event:EVT-7D5D28DF6A",
+      "target": "report:SC-014",
+      "rel": "reported_by"
+    },
+    {
+      "source": "event:EVT-7D5D28DF6A",
+      "target": "place:old medina residential block",
+      "rel": "occurred_at"
+    },
+    {
+      "source": "event:EVT-04DB9E67F1",
+      "target": "report:SC-015",
+      "rel": "reported_by"
+    },
+    {
+      "source": "event:EVT-04DB9E67F1",
+      "target": "place:الجامعة",
+      "rel": "occurred_at"
+    },
+    {
+      "source": "event:EVT-C302803DE2",
+      "target": "report:SC-016",
+      "rel": "reported_by"
+    },
+    {
+      "source": "event:EVT-C302803DE2",
+      "target": "place:المدينة",
+      "rel": "occurred_at"
+    },
+    {
+      "source": "event:EVT-72230A49F0",
+      "target": "report:SC-017",
+      "rel": "reported_by"
+    },
+    {
+      "source": "event:EVT-72230A49F0",
+      "target": "place:الحارة",
+      "rel": "occurred_at"
+    },
+    {
+      "source": "event:EVT-75EACB2426",
+      "target": "report:SC-017",
+      "rel": "reported_by"
+    },
+    {
+      "source": "event:EVT-2F4AC6236D",
+      "target": "report:SC-018",
+      "rel": "reported_by"
+    },
+    {
+      "source": "event:EVT-2F4AC6236D",
+      "target": "place:hopital al-amal",
+      "rel": "occurred_at"
+    },
+    {
+      "source": "event:EVT-CF9836F206",
+      "target": "report:SC-019",
+      "rel": "reported_by"
+    },
+    {
+      "source": "event:EVT-CF9836F206",
+      "target": "place:المستشفى",
+      "rel": "occurred_at"
+    },
+    {
+      "source": "event:EVT-5FF586838B",
+      "target": "report:SC-019",
+      "rel": "reported_by"
+    },
+    {
+      "source": "event:EVT-5FF586838B",
+      "target": "place:sopra",
+      "rel": "occurred_at"
+    },
+    {
+      "source": "event:EVT-5FF586838B",
+      "target": "people:50",
+      "rel": "affects"
+    },
+    {
+      "source": "event:EVT-60F2114620",
+      "target": "report:SC-020",
+      "rel": "reported_by"
+    },
+    {
+      "source": "event:EVT-60F2114620",
+      "target": "place:الملعب الرياضي",
+      "rel": "occurred_at"
+    },
+    {
+      "source": "event:EVT-A82ACDD757",
+      "target": "report:SC-021",
+      "rel": "reported_by"
+    },
+    {
+      "source": "event:EVT-A82ACDD757",
+      "target": "place:industrial zone",
+      "rel": "occurred_at"
+    },
+    {
+      "source": "event:EVT-EC3112566E",
+      "target": "report:SC-022",
+      "rel": "reported_by"
+    },
+    {
+      "source": "event:EVT-EC3112566E",
+      "target": "place:zone industrielle",
+      "rel": "occurred_at"
+    },
+    {
+      "source": "event:EVT-2E2F90A677",
+      "target": "report:SC-023",
+      "rel": "reported_by"
+    },
+    {
+      "source": "event:EVT-2E2F90A677",
+      "target": "place:الدوار الشمالي",
+      "rel": "occurred_at"
+    },
+    {
+      "source": "event:EVT-C45B67E434",
+      "target": "report:SC-024",
+      "rel": "reported_by"
+    },
+    {
+      "source": "event:EVT-C45B67E434",
+      "target": "place:السرو ديالو",
+      "rel": "occurred_at"
+    },
+    {
+      "source": "event:EVT-9DB526D84A",
+      "target": "report:SC-025",
+      "rel": "reported_by"
+    },
+    {
+      "source": "event:EVT-9DB526D84A",
+      "target": "place:hopital al-amal",
+      "rel": "occurred_at"
+    },
+    {
+      "source": "event:EVT-9DB526D84A",
+      "target": "people:4",
+      "rel": "affects"
+    },
+    {
+      "source": "event:EVT-B0AE7AAF8F",
+      "target": "report:SC-026",
+      "rel": "reported_by"
+    },
+    {
+      "source": "event:EVT-B0AE7AAF8F",
+      "target": "people:2",
+      "rel": "affects"
+    },
+    {
+      "source": "event:EVT-79A19A451D",
+      "target": "report:SC-027",
+      "rel": "reported_by"
+    },
+    {
+      "source": "event:EVT-79A19A451D",
+      "target": "place:pont",
+      "rel": "occurred_at"
+    },
+    {
+      "source": "event:EVT-F9745DF773",
+      "target": "report:SC-028",
+      "rel": "reported_by"
+    },
+    {
+      "source": "event:EVT-F9745DF773",
+      "target": "place:stadium",
+      "rel": "occurred_at"
+    },
+    {
+      "source": "event:EVT-3C39C0FEC5",
+      "target": "report:SC-029",
+      "rel": "reported_by"
+    },
+    {
+      "source": "event:EVT-3C39C0FEC5",
+      "target": "place:bridge",
+      "rel": "occurred_at"
+    },
+    {
+      "source": "event:EVT-84026D14CB",
+      "target": "report:SC-029",
+      "rel": "reported_by"
+    },
+    {
+      "source": "event:EVT-88EA72AAC1",
+      "target": "report:SC-029",
+      "rel": "reported_by"
+    },
+    {
+      "source": "event:EVT-23BF2AE60D",
+      "target": "report:SC-030",
+      "rel": "reported_by"
+    },
+    {
+      "source": "event:EVT-23BF2AE60D",
+      "target": "place:pont central",
+      "rel": "occurred_at"
+    },
+    {
+      "source": "event:EVT-B750AFB396",
+      "target": "report:SC-031",
+      "rel": "reported_by"
+    },
+    {
+      "source": "event:EVT-B750AFB396",
+      "target": "place:stade omnisports",
+      "rel": "occurred_at"
+    },
+    {
+      "source": "event:EVT-103A803962",
+      "target": "report:SC-031",
+      "rel": "reported_by"
+    },
+    {
+      "source": "event:EVT-103A803962",
+      "target": "place:stade omnisports",
+      "rel": "occurred_at"
+    },
+    {
+      "source": "event:EVT-077CC924A8",
+      "target": "report:SC-032",
+      "rel": "reported_by"
+    },
+    {
+      "source": "event:EVT-077CC924A8",
+      "target": "place:الملعب الرياضي",
+      "rel": "occurred_at"
+    },
+    {
+      "source": "event:EVT-A884C7A1CC",
+      "target": "report:SC-033",
+      "rel": "reported_by"
+    },
+    {
+      "source": "event:EVT-A884C7A1CC",
+      "target": "place:kaln}diro stadium rah maftouh",
+      "rel": "occurred_at"
+    },
+    {
+      "source": "event:EVT-64A72CDF2A",
+      "target": "report:SC-034",
+      "rel": "reported_by"
+    },
+    {
+      "source": "event:EVT-64A72CDF2A",
+      "target": "place:sports stadium",
+      "rel": "occurred_at"
+    }
+  ],
+  "stats": {
+    "nodes": 105,
+    "edges": 96,
+    "events": 43,
+    "places": 25,
+    "contradictions": 3
+  }
+}
