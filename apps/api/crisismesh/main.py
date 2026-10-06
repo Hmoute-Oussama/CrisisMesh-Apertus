@@ -397,6 +397,21 @@ def get_audit(entity_id: str) -> list[AuditOut]:
         return [AuditOut.model_validate(a) for a in entries]
 
 
+from .dashboard import router as dashboard_router
+app.include_router(dashboard_router, tags=["ui"])
+
+@app.get("/ui")
+def ui_redirect():
+    from fastapi.responses import RedirectResponse
+    return RedirectResponse("/")
+
+
+# root is provided by dashboard router; avoid redefining with missing imports
+# ensure dashboard root is mounted
+app.include_router(dashboard_router, tags=["ui"], include_in_schema=False)
+pass
+
+
 @app.get("/audit/recent", response_model=list[AuditOut], tags=["audit"])
 def recent_audit(limit: int = Query(100, le=1000)) -> list[AuditOut]:
     with session_scope() as s:

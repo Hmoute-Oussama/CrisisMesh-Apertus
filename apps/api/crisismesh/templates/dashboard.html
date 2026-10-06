@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>CrisisMesh Apertus — Offline Evidence Dashboard</title>
+  <style>
+    :root {
+      --bg: #0f172a; --panel: #0b122b; --muted: #8fa3b3;
+      --primary: #4cc9f0; --ok: #22c55e; --warn: #f59e0b; --bad: #ef4444;
+      --text: #e7edf2; --border: #1f3a5f;
+    }
+    body { margin:0; background:var(--bg); color:var(--text);
+      font: 14px/1.55 system-ui,Segoe UI,Roboto,Ubuntu,Arial,sans-serif; }
+    header { padding:12px 16px; background:#0b152f; border-bottom:1px solid var(--border);
+      display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap; }
+    header h1 { margin:0; font-size:18px; letter-spacing:.2px; }
+    nav { display:flex; gap:6px; flex-wrap:wrap; }
+    nav button { padding:4px 8px; border:1px solid var(--border); background:transparent;
+      color:var(--text); border-radius:4px; cursor:pointer; }
+    nav button.active, nav button:hover { background:#14284a; }
+    main { padding:16px; display:flex; flex-direction:column; gap:16px; max-width:1400px; margin:0 auto; }
+    .grid { display:grid; gap:16px; }
+    .grid-2 { grid-template-columns: repeat(auto-fit,minmax(360px,1fr)); }
+    .panel { background:var(--panel); border:1px solid var(--border); border-radius:8px;
+      box-shadow:0 2px 12px rgba(0,0,0,.15); display:flex; flex-direction:column; min-height:0; }
+    .panel header { border:none; padding:8px 12px; background:transparent; }
+    .panel h2 { margin:0; font-size:15px; }
+    .body { padding:0 12px 12px; display:flex; flex-direction:column; gap:8px; overflow:auto; }
+    .chips { display:flex; gap:4px; flex-wrap:wrap; }
+    .chip { padding:1px 6px; border:1px solid var(--border); border-radius:999px; background:#0f1f3d; }
+    table { width:100%; border-collapse:collapse; font-size:12px; }
+    th,td { padding:6px 8px; border-bottom:1px solid #16264a; vertical-align:top; text-align:left; }
+    tbody tr:hover { background:rgba(76,201,240,.05); cursor:pointer; }
+    .mono { font-family: ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; }
+    pre { margin:0; white-space:pre-wrap; overflow:auto; max-height:300px; background:#0a1636;
+      border:1px solid var(--border); padding:8px; border-radius:6px; }
+    .muted { color:var(--muted); }
+    .pill { padding:1px 6px; border-radius:999px; border:1px solid var(--border); background:#14284a; }
+    .pill.ok { border-color:#14532d; background:rgba(34,197,94,.12); color:#86efac; }
+    .pill.warn { border-color:#7c4a0a; background:rgba(245,158,11,.12); color:#fcd34d; }
+    .pill.bad { border-color:#7f1d1d; background:rgba(239,68,68,.12); color:#fca5a5; }
+    #status { font-size:12px; }
+    details summary { cursor:pointer; }
+    a { color:var(--primary); text-decoration:none; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>CrisisMesh Apertus — Offline Evidence Dashboard</h1>
+    <nav>
+      <button data-tab="events" class="active">Events</button>
+      <button data-tab="conflicts">Contradictions</button>
+      <button data-tab="audit">Audit</button>
+      <button data-tab="about">About</button>
+      <button id="btn-health">Health</button>
+      <button id="btn-metrics">Metrics</button>
+    </nav>
+    <div id="status" class="muted">Loading…</div>
+  </header>
+  <main>
+    <!-- EVENTS -->
+    <section data-tab-panel="events">
+      <div class="grid">
+        <div class="panel">
+          <header><h2>Events <span id="events-count" class="muted">(0)</span></h2></header>
+          <div class="body" style="overflow:auto">
+            <table id="tbl-events">
+              <thead><tr>
+                <th>Event ID</th><th>Report</th><th>Type</th><th>Location</th><th>Resolved</th>
+                <th>Ppl</th><th>Sev</th><th>State</th><th>Indep</th><th>Evidence</th>
+              </tr></thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="grid grid-2">
+        <div class="panel">
+          <header><h2>Evidence links</h2></header>
+          <div class="body"><div id="ev-evidence" class="mono muted">Select an event…</div></div>
+        </div>
+        <div class="panel">
+          <header><h2>Event details</h2></header>
+          <div class="body"><pre id="ev-detail" class="mono">Select an event…</pre></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONFLICTS -->
+    <section data-tab-panel="conflicts" hidden>
+      <div class="panel">
+        <header><h2>Contradictions <span id="conf-count" class="muted">(0)</span></h2></header>
+        <div class="body"><table id="tbl-conf">
+          <thead><tr>
+            <th>ID</th><th>Type</th><th>Sev</th><th>Status</th><th>Event A</th><th>Event B</th><th>Explanation</th>
+          </tr></thead><tbody></tbody>
+        </table></div>
+      </div>
+      <div class="grid grid-2">
+        <div class="panel"><header><h2>Conflict details</h2></header>
+          <div class="body"><pre id="conf-detail" class="mono">Select a contradiction…</pre></div></div>
+        <div class="panel"><header><h2>Graph (summary)</h2></header>
+          <div class="body"><pre id="graph-summary" class="mono">—</pre></div></div>
+      </div>
+    </section>
+
+    <!-- AUDIT -->
+    <section data-tab-panel="audit" hidden>
+      <div class="panel">
+        <header><h2>Recent audit <span id="audit-count" class="muted">(0)</span></h2></header>
+        <div class="body"><table id="tbl-audit">
+          <thead><tr><th>Time</th><th>Entity</th><th>Type</th><th>Action</th><th>Model</th><th>Prompt</th><th>Detail</th></tr></thead><tbody></tbody>
+        </table></div>
+      </div>
+      <div class="panel"><header><h2>Audit for entity</h2></header>
+        <div class="body">
+          <div><input id="audit-entity" placeholder="event_id or report_id or conflict_id" size="40"/>
+            <button id="btn-audit-entity">Fetch</button></div>
+          <pre id="audit-entity-detail" class="mono muted">—</pre>
+        </div></div>
+    </section>
+
+    <!-- ABOUT -->
+    <section data-tab-panel="about" hidden>
+      <div class="panel"><header><h2>About CrisisMesh Apertus</h2></header>
+        <div class="body">
+          <p class="muted">Offline-first, evidence-aware crisis information system. All processing is local; no cloud API keys.</p>
+          <ul>
+            <li>Every factual claim has an EvidenceLink back to the report it came from.</li>
+            <li>Uncertainty is never converted to false certainty. Abstention is a valid answer.</li>
+            <li>Contradictions are surfaced, not resolved by the system.</li>
+            <li>Injection attempts are detected and contained.</li>
+          </ul>
+          <p class="mono muted">API base: <span id="api-base">/</span></p>
+        </div></div>
+    </section>
+  </main>
+  <script>
+    const $ = s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+    const state={events:[],conflicts:[],audit:[],sel:{event:null,conf:null}};
+    const base = window.location.origin + "/";
+    function pill(cls,t){return `<span class="pill ${cls}">${t}</span>`}
+    function fmt(v){return v===null||v===undefined?"":String(v)}
+    function ts(v){if(!v)return"";try{return new Date(v).toLocaleString()}catch{return v}}
+    function setTab(id){
+      $$("[data-tab]").forEach(b=>b.classList.toggle("active",b.dataset.tab===id));
+      $$("[data-tab-panel]").forEach(p=>p.hidden = p.dataset.tabPanel!==id);
+    }
+    $$("[data-tab]").forEach(b=>b.onclick=()=>setTab(b.dataset.tab));
+    async function get(path){const r=await fetch(path,{cache:"no-store"}); if(!r.ok) throw r; return r.json()}
+    async function loadAll(){
+      try{const h=await get("/health"); $("#status").innerHTML=`API ${h.status} • Apertus ${h.apertus.status} • v${h.version}`}
+      catch{ $("#status").textContent="API unreachable" }
+      try{const m=await get("/metrics"); $("#metrics").textContent = JSON.stringify(m,null,2)}catch{}
+      try{state.events=await get("/events"); renderEvents()}catch{}
+      try{state.conflicts=await get("/conflicts"); renderConf()}catch{}
+      try{state.audit=await get("/audit/recent"); renderAudit()}catch{}
+      try{const g=await get("/graph"); $("#graph-summary").textContent=JSON.stringify({nodes:g.nodes.length,edges:g.edges.length,types:[...new Set(g.nodes.map(n=>n.type))]},null,2)}catch{}
+    }
+    function renderEvents(){
+      const tb=$("#tbl-events tbody"); tb.innerHTML="";
+      $("#events-count").textContent=`(${state.events.length})`;
+      state.events.forEach(ev=>{
+        const tr=document.createElement("tr"); tr.onclick=()=>selectEvent(ev);
+        tr.innerHTML=`
+          <td class="mono">${ev.event_id}</td>
+          <td class="mono">${ev.report_id}</td>
+          <td>${ev.event_type}</td>
+          <td>${fmt(ev.location_text)}</td>
+          <td>${fmt(ev.resolved_location)}</td>
+          <td>${fmt(ev.people_affected)}</td>
+          <td>${fmt(ev.severity)}</td>
+          <td>${ev.verification_state}</td>
+          <td>${ev.independent_source_count}</td>
+          <td class="mono">${(ev.evidence_links||[]).length}</td>`;
+        tb.appendChild(tr);
+      });
+    }
+    async function selectEvent(ev){
+      state.sel.event=ev; $("#ev-detail").textContent=JSON.stringify(ev,null,2);
+      try{const r=await get(`/events/${ev.event_id}`); $("#ev-detail").textContent=JSON.stringify(r,null,2)}catch{}
+      try{
+        const data=await get(`/audit/${ev.event_id}`);
+        const lines=(data.audit||[]).map(a=>`${ts(a.at)} ${a.action} ${a.model_used||""} ${a.prompt_version||""} ${JSON.stringify(a.detail||{})}`).join("\n");
+        $("#ev-evidence").innerHTML = `<div>Evidence links: ${(ev.evidence_links||[]).length}</div><pre>${JSON.stringify(ev.evidence_links||[],null,2)}</pre><div class="muted">Audit:</div><pre>${lines||"—"}</pre>`;
+      }catch{ $("#ev-evidence").textContent="No audit" }
+    }
+    function renderConf(){
+      const tb=$("#tbl-conf tbody"); tb.innerHTML=""; $("#conf-count").textContent=`(${state.conflicts.length})`;
+      state.conflicts.forEach(c=>{
+        const tr=document.createElement("tr"); tr.onclick=()=>selectConf(c);
+        tr.innerHTML=`
+          <td class="mono">${c.conflict_id}</td>
+          <td>${c.conflict_type}</td>
+          <td>${c.severity}</td>
+          <td>${c.status}</td>
+          <td class="mono">${c.event_a_id}</td>
+          <td class="mono">${c.event_b_id}</td>
+          <td>${c.explanation}</td>`;
+        tb.appendChild(tr);
+      });
+    }
+    function selectConf(c){ $("#conf-detail").textContent=JSON.stringify(c,null,2); }
+    function renderAudit(){
+      const tb=$("#tbl-audit tbody"); tb.innerHTML=""; $("#audit-count").textContent=`(${state.audit.length})`;
+      state.audit.forEach(a=>{
+        const tr=document.createElement("tr");
+        tr.innerHTML=`
+          <td>${ts(a.at)}</td>
+          <td class="mono">${a.entity_id}</td>
+          <td>${a.entity_type}</td>
+          <td>${a.action}</td>
+          <td class="mono">${fmt(a.model_used)}</td>
+          <td class="mono">${fmt(a.prompt_version)}</td>
+          <td><details><summary>detail</summary><pre>${JSON.stringify(a.detail||{},null,2)}</pre></details></td>`;
+        tb.appendChild(tr);
+      });
+    }
+    $("#btn-health").onclick=async()=>{try{const h=await get("/health"); alert(JSON.stringify(h,null,2))}catch(e){alert(e)}}
+    $("#btn-metrics").onclick=async()=>{try{const m=await get("/metrics"); alert(JSON.stringify(m,null,2))}catch(e){alert(e)}}
+    $("#btn-audit-entity").onclick=async()=>{
+      const id=$("#audit-entity").value.trim(); if(!id)return;
+      try{const d=await get(`/audit/${id}`); $("#audit-entity-detail").textContent=JSON.stringify(d,null,2)}catch{}
+    };
+    $("#api-base").textContent=base;
+    loadAll(); setInterval(loadAll,5000);
+  </script>
+</body>
+</html>
