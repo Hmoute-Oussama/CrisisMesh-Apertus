@@ -24,7 +24,7 @@ Verified end to end on a laptop CPU, offline, against the Al-Nour demo corpus:
 | | |
 |---|---|
 | Reports processed | 34 (fr 13, ar 9, dar 7, en 5) |
-| Events extracted | 43 |
+| Events extracted | 38 |
 | Evidence links | 171 |
 | Cross-language contradictions found | 3 |
 | Duplicate groups | 1 |
