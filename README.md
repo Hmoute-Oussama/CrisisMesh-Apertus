@@ -288,3 +288,29 @@ builds used for testing come from community conversions
 (`agentlans/Apertus-v1.1-4B-Instruct-GGUF`,
 `unsloth/Apertus-8B-Instruct-2509-GGUF`); verify their metadata before
 redistribution.
+## Measured Results (from scripts/evaluate.py)
+
+Truth is measured, not asserted. The run uses the existing database and compares against datasets/demo/ground_truth.json without reading that file during ingestion.
+
+| Metric | Value |
+|---|---|
+| **Truth Preservation Score (TPS)** | **0.8433** [VALID] |
+| Events extracted | 38 |
+| Events grounded | 38 (grounding rate 1.0) |
+| Reports annotated | 34 |
+| Conflicts detected | 3 |
+| Designed contradictions (comparable/detected) | 1 of 1 (2 designed) |
+| Injection reports (promoted) | 1 (promoted: 0) |
+| Abstention discipline | 1.0 |
+| Injection containment | 1.0 |
+
+### Per-field F1
+
+| Field | Precision | Recall | F1 |
+|---|---|---|---|
+| Event type | 0.6316 | 0.75 | 0.6857 |
+| Location | 1.0 | 0.75 | 0.8571 |
+| People affected | 1.0 | 0.6562 | 0.7925 |
+| Severity | 1.0 | 0.7188 | 0.8364 |
+
+Notes: TPS weights grounding and abstention heavily (fabricated counts set the system to INVALID by design). SC-025/SC-026 disagree on count but the Arabic report states no location at all; that pair is not comparable and is not counted as a miss. See datasets/evaluation/tps.json for the full breakdown.
